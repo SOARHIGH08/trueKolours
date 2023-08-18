@@ -1,0 +1,174 @@
+.logo-text{    
+    color: #77530a;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    font-size: var(--step--1);
+    display: flex;
+}
+
+.logo-text p {
+    font-size: var(--step--4);
+    font-weight: 500;
+    font-style: italic  ;
+}
+
+.hero-section{
+    overflow: hidden;
+}
+
+.hero-section .page-wrapper {
+    justify-content: space-evenly;
+}
+
+.hero-section .page-wrapper .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    z-index: 1;
+} 
+
+.icon-container {    
+    width: var(--step-8);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.icon-container iconify-icon{
+    font-size: var(--step-0);
+    color: #cac6be;
+}
+
+.hero-section .page-wrapper .text h1{
+    font-size: var(--step--1);
+    color: #77530a;
+    font-family: 'Montserrat', sans-serif;
+}   
+
+.hero-section .page-wrapper .text h2{
+    color: #4f4242;
+    margin-top: 10px;
+    font-size: var(--step--4);
+}
+
+.hero-section .page-wrapper .text a{
+    display: flex;
+    margin-top: 50px;
+    font-family: 'DM Serif Display', serif;
+}  
+
+.hero-section .page-wrapper .text .call-to-action{
+    margin: 30px 30px 0 30px;
+    width: 100%;
+    height: 50%;
+}
+
+.hero-section .page-wrapper .happy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .page-wrapper .happy img{
+    width: 100%;
+}
+
+.hero-section .page-wrapper .call-to-action .cta-buts{
+    width: var(--step-7);
+    height: var(--step-1);
+    font-size: var(--step--3);
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    animation: glow 3s infinite ease-in-out;
+}
+
+@keyframes glow{
+    0%{
+        box-shadow: 0 2px 0px #f9ba3b;
+        box-shadow: 0 2px 0px #000000;
+        background-position: 0 0;
+    }
+    50%{
+        box-shadow: 0 2px 50px #1c1c1cbe;
+        background-position: -100% 0;
+    }
+    100%{
+        box-shadow: 0 2px 0px #f9ba3b;
+        box-shadow: 0 2px 0px #000000;
+        background-position: 0 0;
+    }
+}
+
+.page-wrapper .cta-buts::before{
+    position: absolute;
+    content: "Get Involved";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-size: 200%;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a);
+    color: #3d2901;
+}
+
+.page-wrapper .cta-buts:hover{
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.page-wrapper .cta-buts:hover::before{
+    background-position: right;
+    transition-duration: 1s;
+    color: #ffd277;
+    background: linear-gradient(to right,#1e1d1c,#77530a,#1e1d1c);
+}
+
+.page-wrapper .cta-buts:active{
+    transform: scale(0.92);
+}
+
+
+@media screen and (max-width: 1000px){
+	
+    /* navbar */
+    nav .menu-icon{
+        display: block;
+	}
+
+    /* hero - section */
+    .hero-section .page-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .page-wrapper .text{
+        align-items: center;
+    }
+
+    .hero-section .page-wrapper .happy img{
+        margin-top: 0;
+        width: 350px;
+    }  
+
+    .hero-section .page-wrapper .text .call-to-action .cta-buts{
+        margin: 0 auto;
+    }
+
+
+}

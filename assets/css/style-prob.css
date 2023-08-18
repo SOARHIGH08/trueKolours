@@ -1,0 +1,67 @@
+/* problem - section */
+
+.problem-section .page-wrapper{
+    justify-content: flex-end;
+}
+
+.problem-section .page-wrapper .prob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+    z-index: 1;
+    margin: 5px 5vw;
+}
+
+.problem-section .page-wrapper .prob h1,
+.problem-section .page-wrapper .prob p{
+    margin: 0 40px;
+    text-align: justify;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.problem-section .page-wrapper .prob img{
+    height: 50vh;
+    border-radius: 13% 43% 16% 50% / 18% 50% 24% 53%;
+}
+
+.problem-section .page-wrapper .sad img{
+    height: 100vh;
+    opacity: .3;
+    position: absolute;
+    left: var(--step-4);
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+    .problem-section .page-wrapper{
+        justify-content: center;
+    }
+
+    .problem-section .page-wrapper .prob{
+        width: 100%;
+    }
+
+    .problem-section .page-wrapper .prob h1{
+        flex-wrap: nowrap;
+        text-align: center;
+        line-height: normal;
+    }
+    
+    .problem-section .page-wrapper .prob img{
+        height: var(--step-img--2);
+        border-radius: 13% 43% 16% 50% / 18% 50% 24% 53%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+        
+    .problem-section .page-wrapper .sad img{
+        left: 0;
+        max-width: 100%;
+    }
+}

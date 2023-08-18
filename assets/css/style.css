@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+    /* border: 1px solid white; */   
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=300,28,1.2,1200,60,1.25,10,10,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* font */
+:root {
+    /* Step -10: 4.52px → 6.44px */
+    --step--10: clamp(0.28rem, calc(0.24rem + 0.21vw), 0.40rem);
+  
+    /* Step -9: 5.43px → 8.05px */
+    --step--9: clamp(0.34rem, calc(0.28rem + 0.29vw), 0.50rem);
+  
+    /* Step -8: 6.51px → 10.07px */
+    --step--8: clamp(0.41rem, calc(0.33rem + 0.40vw), 0.63rem);
+  
+    /* Step -7: 7.81px → 12.58px */
+    --step--7: clamp(0.49rem, calc(0.39rem + 0.53vw), 0.79rem);
+  
+    /* Step -6: 9.38px → 15.73px  */
+    /* p */
+    --step--6: clamp(0.59rem, calc(0.45rem + 0.71vw), 0.98rem);
+  
+    /* Step -5: 11.25px → 19.66px */
+    --step--5: clamp(0.70rem, calc(0.53rem + 0.93vw), 1.23rem);
+  
+    /* Step -4: 13.50px → 24.58px */
+    /* h2 */
+    --step--4: clamp(0.84rem, calc(0.61rem + 1.23vw), 1.54rem);
+  
+    /* Step -3: 16.20px → 30.72px */
+    --step--3: clamp(1.01rem, calc(0.71rem + 1.61vw), 1.92rem);
+  
+    /* Step -2: 19.44px → 38.40px */
+    --step--2: clamp(1.22rem, calc(0.82rem + 2.11vw), 2.40rem);
+  
+    /* Step -1: 23.33px → 48.00px */
+    --step--1: clamp(1.46rem, calc(0.94rem + 2.74vw), 3.00rem);
+  
+    /* Step 0: 28.00px → 60.00px */
+    /* h1 */
+    --step-0: clamp(1.75rem, calc(1.08rem + 3.56vw), 3.75rem);
+  
+    /* Step 1: 33.60px → 75.00px */
+    --step-1: clamp(2.10rem, calc(1.24rem + 4.60vw), 4.69rem);
+  
+    /* Step 2: 40.32px → 93.75px */
+    --step-2: clamp(2.52rem, calc(1.41rem + 5.94vw), 5.86rem);
+  
+    /* Step 3: 48.38px → 117.19px */
+    --step-3: clamp(3.02rem, calc(1.59rem + 7.65vw), 7.32rem);
+  
+    /* Step 4: 58.06px → 146.48px */
+    --step-4: clamp(3.63rem, calc(1.79rem + 9.82vw), 9.15rem);
+  
+    /* Step 5: 69.67px → 183.11px */
+    --step-5: clamp(4.35rem, calc(1.99rem + 12.60vw), 11.44rem);
+  
+    /* Step 6: 83.61px → 228.88px */
+    --step-6: clamp(5.23rem, calc(2.20rem + 16.14vw), 14.31rem);
+  
+    /* Step 7: 100.33px → 286.10px */
+    --step-7: clamp(6.27rem, calc(2.40rem + 20.64vw), 17.88rem);
+  
+    /* Step 8: 120.39px → 357.63px */
+    --step-8: clamp(7.52rem, calc(2.58rem + 26.36vw), 22.35rem);
+  
+    /* Step 9: 144.47px → 447.03px */
+    --step-9: clamp(9.03rem, calc(2.73rem + 33.62vw), 27.94rem);
+  
+    /* Step 10: 173.37px → 558.79px */
+    --step-10: clamp(10.84rem, calc(2.81rem + 42.82vw), 34.92rem);
+}
+
+
+/* @link https://utopia.fyi/type/calculator?c=300,280,1.23,1200,650,1.25,10,10,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* image */
+:root {
+    /* Step-img -10: 35.33px → 69.79px */
+    --step-img--10: clamp(2.21rem, calc(1.49rem + 3.83vw), 4.36rem);
+  
+    /* Step-img -9: 43.45px → 87.24px */
+    --step-img--9: clamp(2.72rem, calc(1.80rem + 4.87vw), 5.45rem);
+  
+    /* Step-img -8: 53.45px → 109.05px */
+    --step-img--8: clamp(3.34rem, calc(2.18rem + 6.18vw), 6.82rem);
+  
+    /* Step-img -7: 65.74px → 136.31px */
+    --step-img--7: clamp(4.11rem, calc(2.64rem + 7.84vw), 8.52rem);
+  
+    /* Step-img -6: 80.86px → 170.39px */
+    --step-img--6: clamp(5.05rem, calc(3.19rem + 9.95vw), 10.65rem);
+  
+    /* Step-img -5: 99.46px → 212.99px */
+    --step-img--5: clamp(6.22rem, calc(3.85rem + 12.61vw), 13.31rem);
+  
+    /* Step-img -4: 122.33px → 266.24px */
+    --step-img--4: clamp(7.65rem, calc(4.65rem + 15.99vw), 16.64rem);
+  
+    /* Step-img -3: 150.47px → 332.80px */
+    --step-img--3: clamp(9.40rem, calc(5.61rem + 20.26vw), 20.80rem);
+  
+    /* Step-img -2: 185.08px → 416.00px */
+    --step-img--2: clamp(11.57rem, calc(6.76rem + 25.66vw), 26.00rem);
+  
+    /* Step-img -1: 227.64px → 520.00px */
+    --step-img--1: clamp(14.23rem, calc(8.14rem + 32.48vw), 32.50rem);
+  
+    /* Step-img 0: 280.00px → 650.00px */
+    --step-img-0: clamp(17.50rem, calc(9.79rem + 41.11vw), 40.63rem);
+  
+    /* Step-img 1: 344.40px → 812.50px */
+    --step-img-1: clamp(21.53rem, calc(11.77rem + 52.01vw), 50.78rem);
+  
+    /* Step-img 2: 423.61px → 1015.63px */
+    --step-img-2: clamp(26.48rem, calc(14.14rem + 65.78vw), 63.48rem);
+  
+    /* Step-img 3: 521.04px → 1269.53px */
+    --step-img-3: clamp(32.57rem, calc(16.97rem + 83.17vw), 79.35rem);
+  
+    /* Step-img 4: 640.88px → 1586.91px */
+    --step-img-4: clamp(40.06rem, calc(20.35rem + 105.11vw), 99.18rem);
+  
+    /* Step-img 5: 788.29px → 1983.64px */
+    --step-img-5: clamp(49.27rem, calc(24.37rem + 132.82vw), 123.98rem);
+  
+    /* Step-img 6: 969.59px → 2479.55px */
+    --step-img-6: clamp(60.60rem, calc(29.14rem + 167.77vw), 154.97rem);
+  
+    /* Step-img 7: 1192.60px → 3099.44px */
+    --step-img-7: clamp(74.54rem, calc(34.81rem + 211.87vw), 193.72rem);
+  
+    /* Step-img 8: 1466.89px → 3874.30px */
+    --step-img-8: clamp(91.68rem, calc(41.53rem + 267.49vw), 242.14rem);
+  
+    /* Step-img 9: 1804.28px → 4842.88px */
+    --step-img-9: clamp(112.77rem, calc(49.46rem + 337.62vw), 302.68rem);
+  
+    /* Step-img 10: 2219.26px → 6053.60px */
+    --step-img-10: clamp(138.70rem, calc(58.82rem + 426.04vw), 378.35rem);
+  }
+
+
+p{
+    font-family: Poppins;
+    font-size: var(--step--6);
+}
+
+
+section{
+    height: 100vh;
+}
+
+section:nth-child(odd){
+    background-color: black;
+    color: white
+}
+
+section:nth-child(even){
+    background-color: white;
+    color: black;
+}
+
+.page-wrapper{
+    width: min(1200px, 95%);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;  
+}
+
+
+/* js */
+.scroll-to-section{
+    scroll-behavior: smooth;
+}
+

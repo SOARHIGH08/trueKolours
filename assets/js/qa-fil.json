@@ -1,0 +1,263 @@
+[
+    {
+        "question": "Paano mo inilalarawan ang iyong karaniwang antas ng enerhiya?",
+        "answers": [
+            "Matataas na enerhiya, laging handang kumilos.",
+            "Balanseng enerhiya, may paminsang pag-usbong ng kasiglahan.",
+            "Katamtaman na enerhiya, steady at matiyagang.",
+            "Mababang enerhiya, mas gusto ang tahimik at maginhawang takbo."
+        ]
+    },
+    {
+        "question": "Paano mo karaniwang hinaharap ang mga sosyal na sitwasyon?",
+        "answers": [
+            "Ako ang buhay ng party, nakikinabang sa mga pakikipag-ugnayan at pagkikita sa mga bagong tao.",
+            "Sosyal ako at palakaibigan, ngunit naa-appreciate ko rin ang mga oras para sa sarili.",
+            "Nag-e-enjoy ako sa pakikipag-sosyalan sa mga munting grupo ng mga malalapit na kaibigan o pamilya.",
+            "Ako'y mas tahimik at mas pinipili ang isang-on-isang usapan o mga tahimik na usapan."
+        ]
+    },
+    {
+        "question": "Paano mo inaasikaso ang mga pagbabago o mga di-inaasahang pangyayari?",
+        "answers": [
+            "Ako'y mabilis na nakakapag-ayos at buong puso kong tinatanggap ang mga pagbabago nang may sigla.",
+            "Maaring medyo kinakabahan ako sa una, pero inaayos ko at ginagawa ang lahat ng aking makakaya.",
+            "Mas gusto ko ang kaunting katatagan at istraktura ngunit kaya kong mag-ayos kapag kinakailangan.",
+            "Nakakaranas ako ng pagkakabahala sa mga pagbabago at maaring tumagal ng oras bago makapag-ayos."
+        ]
+    },
+    {
+        "question": "Paano mo inilalarawan ang iyong paraan ng komunikasyon?",
+        "answers": [
+            "Ako'y maliksi at ekspresibo, gumagamit ng galaw at body language.",
+            "Ako'y masigasig at nakaka-engganyo, gumagamit ng mga kuwento at pagpapatawa para makabuo ng koneksyon.",
+            "Magaling akong tagapakinig at nagbibigay ng mabini at mapanuring mga sagot sa pakikipag-usap.",
+            "Ako'y mas tahimik at piliin ko nang maingat ang mga salita."
+        ]
+    },
+    {
+        "question": "Paano mo hina-handle ang mga pagsusuri o feedback?",
+        "answers": [
+            "Ako'y bukas sa feedback at pinahahalagahan ang mga pagkakataon para sa pag-unlad.",
+            "Maaring sa una ay medyo ma-defensive ako, ngunit sinusubukan kong tingnan ang feedback nang may katapatan.",
+            "Ako'y seryoso sa pagsusuri at iniisip ito bago gumawa ng anumang pagbabago.",
+            "Maaring ako'y sensitibo sa mga pagsusuri at maaaring personalin ko ito."
+        ]
+    },
+    {
+        "question": "Paano mo hina-handle ang pagdedesisyon?",
+        "answers": [
+            "Tinututukan ko ang aking intuitiyon at gumagawa ng mga desisyon batay sa aking kutob.",
+            "Binibigyang-pansin ko ang mga mabubuting epekto at masamang epekto at gumagawa ng mga lohikal na desisyon.",
+            "Naghahanap ako ng mga opinyon at pagsang-ayon mula sa iba bago gumawa ng desisyon.",
+            "Maaaring nahihirapan ako sa pagdedesisyon at nangangailangan ng mas maraming oras upang magdesisyon."
+        ]
+    },
+    {
+        "question": "Paano mo karaniwang hinaharap ang mga pagtatalo o di-pagkakaunawaan?",
+        "answers": [
+            "Ako'y nag-aatubiling harapin ang mga pagtatalo at mas gustong maayos ito agad.",
+            "Idinidiskarte ko ang aking mga opinyon ng may kumpiyansa ngunit bukas pa rin sa paghanap ng common ground.",
+            "Naghahanap ako ng kompromiso at layuning magkaroon ng pagkakasunduan sa pagsasaliksik sa mga di-pagkakaunawaan.",
+            "Ini-iiwasan ko ang mga pagtatalo at mas pinipili na mapanatili ang isang mapayapang kapaligiran."
+        ]
+    },
+    {
+        "question": "Paano mo hina-handle ang stress?",
+        "answers": [
+            "Ako'y nag-e-excel sa ilalim ng presyon at ginagamit ang stress bilang motibasyon.",
+            "Naghahanap ako ng mga paraan upang mahusay na malabanan ang stress at mapanatili ang balanse.",
+            "Maaaring ako'y ma-overwhelm ng stress at kailangan ng suporta upang malampasan ito.",
+            "Tumitindi ang stress ko at mas pinaprioritize ko ang pahinga."
+        ]
+    },
+    {
+        "question": "Paano mo hina-handle ang mga bagong gawain o hamon?",
+        "answers": [
+            "Ako'y agad na sumasabak at nagsasaya sa kasiyahan ng mga bagong karanasan.",
+            "Nagbuo ako ng plano o estratehiya bago harapin ang gawain.",
+            "Naghahanap ako ng gabay o opinyon mula sa iba para malagpasan ang bagong hamon.",
+            "Maaring may pangamba o kaba ako tungkol sa mga bagong gawain at nangangailangan ako ng assurance."
+        ]
+    },
+
+    {
+        "question": "Paano mo mas gustong gamitin ang iyong libreng oras?",
+        "answers": [
+            "Nakikilahok sa mga sosyal na aktibidad at nagugugol ng oras kasama ang mga kaibigan.",
+            "Pina-pursue ang personal na interes at mga hilig nang mag-isa.",
+            "Nag-e-enjoy ng mahusay na oras kasama ang mga malalapit na kaibigan o miyembro ng pamilya.",
+            "Nakikilahok sa mga nakakarelaks na aktibidad at nagkakaroon ng tahimik na oras mag-isa."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga di-inaasahang pagbabago sa iyong takbo ng buhay?",
+        "answers": [
+            "Ako'y mabilis na nakakapag-ayos at nasisiyahan sa kasalukuyan ng pagsulpot-sulpot.",
+            "Maaring medyo magulo ang aking damdamin ngunit maari kong baguhin ang aking mga plano ayon sa sitwasyon.",
+            "Mas gusto ko ang may estruktura at mayroong tadhana ngunit maari kong mag-ayos kapag kinakailangan.",
+            "Nakakakita ako ng mga di-inaasahang pagbabago bilang nakakabasag ng tadhana at mas gusto ang katiyakan."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang pagtugon sa mga bagong tao?",
+        "answers": [
+            "Ako'y palakaibigan at natutuwa sa madaling pagkakaroon ng mga koneksyon sa iba.",
+            "Ako'y palakaibigan at magiliw, ngunit kailangan kong maglaan ng oras upang makabuo ng tiwala.",
+            "Maaring tahimik ako sa simula ngunit nagiging mas magaan pagkatapos ko kilalanin nang lubusan.",
+            "Maaring maramdaman ko ang pag-aalala sa pakikipag-ugnayan sa mga bagong tao at mas gusto ang mga pamilyar na mukha."
+        ]
+    },
+
+    {
+        "question": "Paano mo ipinapahayag ang iyong mga emosyon?",
+        "answers": [
+            "Ako'y ekspresibo at nagpapakita ng aking mga emosyon sa pamamagitan ng mga galaw.",
+            "Ako'y masidhing nagpapahayag ng aking mga emosyon.",
+            "Ako'y nakakakilala sa aking mga emosyon at maingat kong pinapahayag ang mga ito.",
+            "Maaring mas pribado ako sa aking mga emosyon at maaring pag-process-in ko ito sa aking sarili."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang isang mabibigat na takdang-aralin o mga responsibilidad?",
+        "answers": [
+            "Ako'y nag-e-excel sa pagmu-multitask at masaya akong maging abala.",
+            "Nagpapamahala ako ng aking trabaho sa pamamagitan ng pagsasa-prioritize at epektibong organisasyon.",
+            "Naghahanap ako ng suporta mula sa iba upang pamahalaan at ma-delegate ang mga gawain.",
+            "Maaring ma-overwhelm ako sa mabibigat na takdang-aralin at kailangan ko ng mga pahinga upang makapag-refresh."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga di-inaasahang pagkabigo o mga tagumpay?",
+        "answers": [
+            "Ako'y nakakakita ng mga pagkabigo bilang mga pagkakataon sa pag-aaral at mabilis na bumabangon.",
+            "Matatag akong tumugon sa mga pagkabigo at ginagamit ang mga ito bilang inspirasyon upang mag-improve.",
+            "Maaring maramdaman ko ang pag-kadismaya sa simula, ngunit tinututukan kong matutunan ang mga pagkakamali at baguhin ang aking pamamaraan.",
+            "Maaring mag-focus ako sa mga pagkabigo at nahihirapan akong maka-recover mula sa mga pagkabigong ito."
+        ]
+    },
+
+    {
+        "question": "Paano mo mas gusto na tanggapin ang mga tagubilin o impormasyon?",
+        "answers": [
+            "Gusto ko ang hands-on na mga demonstrasyon at visual aids.",
+            "Mas gusto ko ang malinaw na pasalita na paliwanag at hakbang-hakbang na mga tagubilin.",
+            "Nag-e-enjoy ako sa mga talakayan sa grupo at mga karanasang pagkatuto na kolaboratibo.",
+            "Mas gusto ko ang mga nakasulat na tagubilin at oras na pagproseso ng impormasyon nang indibidwal."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang kompetisyon o mga sitwasyon na naglalaman ng kompetisyon?",
+        "answers": [
+            "Ako'y lubos na kompetitibo at natutuwa sa thrill ng pagkapanalo.",
+            "Kompetitibo ako ngunit nagpapahalaga rin sa tamang pamantayan at pagiging makatao.",
+            "Nag-e-enjoy ako sa magandang kompetisyon at itinuturing na layunin ang pag-unlad ng sarili.",
+            "Maaring magdulot ng kaba sa akin ang kompetisyon at mas gusto ang mga kooperatibong aktibidad."
+        ]
+    },
+
+    {
+        "question": "Paano mo ina-approach ang mga personal na layunin o ambisyon?",
+        "answers": [
+            "Ako'y nagtatakang layunin at aktibong nagtratrabaho para maabot ito.",
+            "Nagtatakang may malinaw na mga layunin at lumilikha ng plano para maisagawa ang mga ito.",
+            "Naghahanap ako ng suporta at inspirasyon mula sa iba upang maabot ang aking mga layunin.",
+            "Maaring mahirap para sa akin ang magtakda ng mga layunin at nangangailangan ako ng motivasyon at gabay."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga proyekto sa grupo o mga gawain na nangangailangan ng kolaborasyon?",
+        "answers": [
+            "Nag-e-enjoy akong maging lider at mag-organisa ng mga pagsisikap ng grupo.",
+            "Aktibo akong nag-aambag at mahusay na nagtatrabaho bilang bahagi ng isang team.",
+            "Nagfo-focus ako sa pagpapanatili ng pagkakaayos sa loob ng grupo at pagresolba sa mga di-pagkakaunawaan.",
+            "Maaring maramdaman ko ang pagod sa mga dynamics ng grupo at mas gusto ang mga indibidwal na gawain."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang pagsusuri o feedback mula sa iba?",
+        "answers": [
+            "Ako'y bukas sa feedback at pinahahalagahan ang letructive criticism.",
+            "Pinahahalagahan ko ang feedback at ginagamit ito bilang oportunidad para sa pag-unlad.",
+            "Nagtutungo ako sa feedback at iniisip ang iba't ibang pananaw.",
+            "Maaring ako'y sensitibo sa mga pagsusuri at maaaring personalin ko ito."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga gawain o responsibilidad na nangangailangan ng atensyon sa mga detalye?",
+        "answers": [
+            "Nag-e-enjoy akong maglaan ng atensyon sa mga detalye at may matiyagang approach.",
+            "Tinututukan ko na hindi malampasan ang mga mahahalagang detalye ngunit focus ako sa mas malawak na larawan.",
+            "Nagpapahalaga ako sa halaga ng mga detalye ngunit maaring kailangan ko ng tulong upang masiguro ang accuracy.",
+            "Maaring mahirap para sa akin ang maglaan ng atensyon sa mga detalye at mas gusto ang mas malawak na mga konsepto."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga sitwasyon na nangangailangan ng empathy at emosyonal na suporta?",
+        "answers": [
+            "Ako'y natural na empathetic at madaling magkaroon ng koneksyon sa iba sa emosyonal na aspeto.",
+            "Ako'y may malasakit at nagbibigay suporta kapag mayroong nangangailangan.",
+            "Aktibong nakikinig at nagbibigay ng kumporta sa mga taong naghahanap ng emosyonal na suporta.",
+            "Maaring mahirap para sa akin ang magbigay ng emosyonal na suporta at maaaring ito'y nakakapagod."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga di-linaw o uncertain na sitwasyon?",
+        "answers": [
+            "Ako'y umaakma sa kawalan ng linaw at nagmamasid sa kasiyahan at pagkakalito nito.",
+            "Komportable ako sa ilang antas ng kawalan ng katiyakan at umaakma sa naaayon.",
+            "Mas gusto ko ang kalinawan ngunit maaring magtugma sa mga sitwasyon na hindi malinaw.",
+            "Nakakaramdam ako ng pag-kabalisa sa kawalan ng linaw at mas gusto ang malinaw at hindi nagbabagong mga sitwasyon."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga alituntunin o mga gabay na itinakda ng iba?",
+        "answers": [
+            "Ako'y independiyente at maaaring mag-challenge sa mga alituntunin kung ito'y tingin kong limitado.",
+            "Respetuhin ko ang mga alituntunin ngunit maaring tanungin kung ito'y mukhang hindi makatarungan o hindi kailangan.",
+            "Sumusunod ako sa mga alituntunin at mga gabay ng may malasakit upang mapanatili ang kaayusan.",
+            "Maaring mahirap para sa akin ang sumunod sa mga alituntunin at mas gusto ang kakayahang mag-adjust."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang time management at mga deadlines?",
+        "answers": [
+            "Nag-e-excel ako sa ilalim ng pressure ng oras at magaling akong kumilos kapag malapit na ang mga deadlines.",
+            "Epektibong namamahala ako ng oras at tiniyak na naaabot ang mga deadlines.",
+            "Nagpapahalaga ako sa istraktura at gumagamit ng mga teknik sa time management upang maabot ang mga deadlines.",
+            "Maaring mahirap para sa akin ang mag-manage ng oras at nahihirapan akong maabot ang mga deadlines."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga sitwasyon na nangangailangan ng kompromiso o paghahanap ng gitna?",
+        "answers": [
+            "Handang akong magkompromiso kung ito'y makakabuti sa kabuuang kapakanan o makakamit ang pagkakasundo.",
+            "Buksan ako sa paghahanap ng common ground at panatilihin ang balanseng mga solusyon.",
+            "Tumutungo ako sa pagkakasundo at iniisip ang mga opinyon ng lahat bago magdesisyon.",
+            "Maaring nahihirapan ako sa kompromiso at mas gusto ang panatilihin ang aking mga prinsipyo."
+        ]
+    },
+
+    {
+        "question": "Paano mo hina-handle ang mga personal na pagkabigo o tagumpay?",
+        "answers": [
+            "Matatag ako at mabilis na bumabangon mula sa mga pagkabigo nang may positibong pananaw.",
+            "Ginagamit ko ang mga pagkabigo bilang mga pagkakataon sa pag-aaral at nag-a-adjust ng aking pamamaraan nang naaayon.",
+            "Nagtutuon ako ng pansin sa mga pagkabigo at ini-aanalyze ang mga dahilan nito upang ma-improve sa hinaharap.",
+            "Maaring mababad sa mga pagkabigo at nahihirapang maka-recover emosyonal."
+        ]
+    }
+]

@@ -1,0 +1,263 @@
+[
+    {
+        "question": "How would you describe your typical energy level?",
+        "answers": [
+            "High energy, always ready for action.",
+            "Balanced energy, with occasional bursts of enthusiasm.",
+            "Moderate energy, steady and consistent.",
+            "Low energy, preferring a calm and relaxed pace."
+        ]
+    },
+    {
+        "question": "How do you tend to handle social situations?",
+        "answers": [
+            "I'm the life of the party, enjoying interactions and meeting new people.",
+            "I'm social and outgoing, but I also appreciate some alone time.",
+            "I enjoy socializing in small groups of close friends or family.",
+            "I'm more reserved and prefer quiet or one-on-one conversations."
+        ]
+    },
+    {
+        "question": "How do you handle change or unexpected events?",
+        "answers": [
+            "I adapt quickly and embrace change with enthusiasm.",
+            "I may feel a bit uneasy at first, but I adjust and make the best of it.",
+            "I prefer some stability and structure but can adapt when necessary.",
+            "I find change challenging and may take time to adjust."
+        ]
+    },
+    {
+        "question": "How would you describe your communication style?",
+        "answers": [
+            "I'm animated and expressive, using gestures and body language.",
+            "I'm enthusiastic and engaging, using stories and humor to connect.",
+            "I'm a good listener and offer thoughtful responses when communicating.",
+            "I'm more reserved and tend to choose my words carefully."
+        ]
+    },
+    {
+        "question": "How do you handle criticism or feedback?",
+        "answers": [
+            "I'm open to feedback and appreciate opportunities for growth.",
+            "I may initially feel defensive, but I try to consider the feedback objectively.",
+            "I take feedback seriously and reflect on it before making any changes.",
+            "I can be sensitive to criticism and may take it personally."
+        ]
+    },
+    {
+        "question": "How do you approach decision-making?",
+        "answers": [
+            "I trust my intuition and make decisions based on gut feelings.",
+            "I weigh the pros and cons and make logical decisions.",
+            "I seek input and consensus from others before making a decision.",
+            "I may struggle with decision-making and may require more time to decide."
+        ]
+    },
+    {
+        "question": "How do you typically handle conflicts or disagreements?",
+        "answers": [
+            "I address conflicts head-on and prefer to resolve them immediately.",
+            "I express my opinions assertively but remain open to finding common ground.",
+            "I seek compromise and strive for harmony in resolving conflicts.",
+            "I avoid conflicts and prefer to maintain a peaceful environment."
+        ]
+    },
+    {
+        "question": "How do you handle stress?",
+        "answers": [
+            "I thrive under pressure and use stress as a motivator.",
+            "I find ways to manage stress effectively and maintain balance.",
+            "I may feel overwhelmed by stress and need support to cope.",
+            "I tend to avoid stressful situations and prioritize relaxation."
+        ]
+    },
+    {
+        "question": "How do you approach new tasks or challenges?",
+        "answers": [
+            "I dive right in and enjoy the excitement of new experiences.",
+            "I develop a plan or strategy before tackling the task.",
+            "I seek guidance or input from others to navigate the new challenge.",
+            "I may feel hesitant or anxious about new tasks and require reassurance."
+        ]
+    },
+
+    {
+        "question": "How do you prefer to spend your free time?",
+        "answers": [
+            "Engaging in social activities and spending time with friends.",
+            "Pursuing personal interests and hobbies independently.",
+            "Enjoying quality time with close friends or family members.",
+            "Engaging in relaxing activities and having quiet time alone."
+        ]
+    },
+
+    {
+        "question": "How do you handle unexpected changes in your routine?",
+        "answers": [
+            "I adapt quickly and enjoy the thrill of spontaneity.",
+            "I may feel slightly unsettled but can adjust my plans accordingly.",
+            "I prefer having a structured routine but can adapt when necessary.",
+            "I find unexpected changes disruptive and prefer stability."
+        ]
+    },
+
+    {
+        "question": "How do you approach meeting new people?",
+        "answers": [
+            "I am outgoing and enjoy making new connections easily.",
+            "I'm friendly and approachable, but I take time to establish trust.",
+            "I'm reserved initially but warm up as I get to know someone better.",
+            "I may feel apprehensive about meeting new people and prefer familiar faces."
+        ]
+    },
+
+    {
+        "question": "How do you express your emotions?",
+        "answers": [
+            "I'm expressive and wear my emotions on my sleeve.",
+            "I'm passionate and express my emotions with intensity.",
+            "I'm in touch with my emotions and express them thoughtfully.",
+            "I may be more private about my emotions and prefer to process them internally."
+        ]
+    },
+
+    {
+        "question": "How do you handle a demanding workload or multiple responsibilities?",
+        "answers": [
+            "I thrive on multitasking and enjoy being busy.",
+            "I manage my workload by prioritizing and organizing effectively.",
+            "I seek support from others to manage and delegate tasks.",
+            "I may feel overwhelmed by a demanding workload and require breaks to recharge."
+        ]
+    },
+
+    {
+        "question": "How do you handle unexpected setbacks or failures?",
+        "answers": [
+            "I see setbacks as learning opportunities and bounce back quickly.",
+            "I'm resilient and use setbacks as motivation to improve.",
+            "I may feel disappointed initially, but I learn from failures and adjust my approach.",
+            "I may dwell on failures and struggle to recover from setbacks."
+        ]
+    },
+
+    {
+        "question": "How do you prefer to receive instructions or information?",
+        "answers": [
+            "I prefer hands-on demonstrations and visual aids.",
+            "I prefer clear verbal explanations and step-by-step instructions.",
+            "I enjoy group discussions and collaborative learning experiences.",
+            "I prefer written instructions and time to process information independently."
+        ]
+    },
+
+    {
+        "question": "How do you handle competition or competitive situations?",
+        "answers": [
+            "I'm highly competitive and enjoy the thrill of winning.",
+            "I'm competitive but also value fair play and sportsmanship.",
+            "I enjoy friendly competition and strive for personal improvement.",
+            "I may feel uncomfortable with competition and prefer cooperative activities."
+        ]
+    },
+
+    {
+        "question": "How do you approach personal goals or aspirations?",
+        "answers": [
+            "I set ambitious goals and actively work towards achieving them.",
+            "I set clear goals and create a plan to accomplish them.",
+            "I seek support and encouragement from others to achieve my goals.",
+            "I may have difficulty setting goals and require motivation and direction."
+        ]
+    },
+
+    {
+        "question": "How do you handle group projects or collaborative work?",
+        "answers": [
+            "I enjoy taking the lead and organizing the group's efforts.",
+            "I actively contribute and work well as part of a team.",
+            "I focus on maintaining harmony within the group and resolving conflicts.",
+            "I may feel overwhelmed by group dynamics and prefer individual work."
+        ]
+    },
+
+    {
+        "question": "How do you handle criticism or feedback from others?",
+        "answers": [
+            "I'm open to feedback and appreciate letructive criticism.",
+            "I value feedback and use it as an opportunity for growth.",
+            "I reflect on feedback and consider different perspectives.",
+            "I can be sensitive to criticism and may take it personally."
+        ]
+    },
+
+    {
+        "question": "How do you handle tasks or responsibilities that require attention to detail?",
+        "answers": [
+            "I enjoy paying attention to details and have a meticulous approach.",
+            "I ensure important details are not overlooked but focus on the bigger picture.",
+            "I appreciate the value of details but may require assistance to ensure accuracy.",
+            "I may find it challenging to pay attention to details and prefer broader concepts."
+        ]
+    },
+
+    {
+        "question": "How do you handle situations that require empathy and emotional support?",
+        "answers": [
+            "I'm naturally empathetic and find it easy to connect with others emotionally.",
+            "I'm compassionate and offer support when someone is in need.",
+            "I actively listen and provide comfort to those who seek emotional support.",
+            "I may struggle with offering emotional support and find it draining."
+        ]
+    },
+
+    {
+        "question": "How do you handle ambiguity or uncertain situations?",
+        "answers": [
+            "I embrace ambiguity and find it exciting and stimulating.",
+            "I'm comfortable with some level of uncertainty and adapt accordingly.",
+            "I prefer clarity but can tolerate uncertainty if necessary.",
+            "I find uncertainty unsettling and prefer clear and predictable situations."
+        ]
+    },
+
+    {
+        "question": "How do you handle rules or guidelines set by others?",
+        "answers": [
+            "I'm independent and may challenge rules if I perceive them as limiting.",
+            "I respect rules but may question them if they seem unfair or unnecessary.",
+            "I follow rules and guidelines conscientiously to maintain order.",
+            "I may have difficulty conforming to rules and prefer flexibility."
+        ]
+    },
+
+    {
+        "question": "How do you handle time management and deadlines?",
+        "answers": [
+            "I thrive under time pressure and perform well when deadlines approach.",
+            "I manage my time effectively and ensure deadlines are met.",
+            "I appreciate structure and use time management techniques to meet deadlines.",
+            "I may struggle with time management and find it challenging to meet deadlines."
+        ]
+    },
+
+    {
+        "question": "How do you handle situations that require compromise or finding a middle ground?",
+        "answers": [
+            "I'm willing to compromise if it benefits the greater good or achieves harmony.",
+            "I'm open to finding common ground and maintaining balanced solutions.",
+            "I strive for consensus and consider everyone's opinions when making decisions.",
+            "I may have difficulty with compromise and prefer sticking to my own principles."
+        ]
+    },
+
+    {
+        "question": "How do you handle personal setbacks or failures?",
+        "answers": [
+            "I'm resilient and quickly bounce back from setbacks with a positive mindset.",
+            "I use setbacks as learning experiences and adjust my approach accordingly.",
+            "I reflect on setbacks and analyze what went wrong to improve in the future.",
+            "I may dwell on setbacks and find it challenging to recover emotionally."
+        ]
+    }
+]

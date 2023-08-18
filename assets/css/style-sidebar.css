@@ -1,0 +1,68 @@
+.burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 7px;
+    width: 60px;
+    height: 55px;
+    background-color: rgb(255, 145, 0);
+    box-shadow:
+        0 0 0 4px wheat,
+        -2px 5px 5px black;
+    border-radius: 21% 23% 27% 41% / 32% 50% 10% 19% ;
+    z-index: 10;
+}
+
+.burger iconify-icon {
+    font-size: var(--step--2);
+    text-shadow: -2px -5px 5px rgb(0, 0, 0);
+}
+
+.sidebar {
+    position: fixed;
+    top: 40px;
+    right: -120px;
+    padding: 10px;
+    margin: 7px;
+    width: 320px;
+    height: 200px;
+    background-color: rgb(255, 145, 0);
+    box-shadow:
+        0 0 0 4px wheat,
+        -2px 5px 5px black;
+
+    border-radius: 21% 23% 27% 41% / 32% 50% 10% 19% ;
+    z-index: 8;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.floating-cta {
+    position: fixed;
+    top: 0;
+    right: 25px;
+    padding: 10px;
+    margin: 7px;
+    width: 190px;
+    height: 45px;
+    background-color: rgb(255, 145, 0);
+    box-shadow:
+        0 0 0 4px wheat,
+        -2px 5px 5px black;
+
+    border-radius: 37% 34% 36% 26% / 10% 36% 34% 34% ;
+    z-index: 9;
+}
+
+.floating-cta h1 {
+    font-size: var(--step--5);
+}
+

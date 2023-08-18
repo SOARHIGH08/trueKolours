@@ -1,0 +1,137 @@
+
+
+/*  footer - section */
+footer{
+    background-color: #272525;
+    border: 1px solid rgba(143, 142, 142, 0.26);
+    height: 25vh;
+}
+
+footer .page-wrapper{
+    justify-content: space-around;  
+    padding: 15px 0;
+}
+
+footer .page-wrapper .foot-text{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+footer .page-wrapper .footer-col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+footer .page-wrapper .icon-col{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .page-wrapper h4, footer .page-wrapper p, footer .page-wrapper a{ 
+    font-size: var(--step--6);
+    color: white;
+    padding: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer .page-wrapper h4{
+    font-size: var(--step--6);
+    color: #ffb300;
+    width: fit-content;
+}
+
+footer .page-wrapper a h4{
+    color: aqua;
+}   
+
+footer .page-wrapper a h4:hover{
+    color: white;
+}
+
+/* follow us */
+footer .icons{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: var(--step--10);
+    gap: var(--step--10);
+    box-shadow: 0px 0px 20px #0000000e;
+    margin-bottom: 20px;
+}
+  
+/* for all social containers*/
+.socialContainer{
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover{
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover{
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover{
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover{
+    background-color: #128C7E;
+    transition-duration: .3s;   
+}
+  
+.socialContainer:active{
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+  
+.socialSvg{
+    width: 17px;
+}
+  
+.socialSvg path{
+    fill: #030303;
+}
+  
+.socialContainer:hover .socialSvg{
+    animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top{
+    0%{
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@media screen and (max-width: 650px){
+    footer{
+        height: auto;
+    }
+    footer .page-wrapper .foot-text{
+        flex-direction: column;
+    }
+   
+}
+  

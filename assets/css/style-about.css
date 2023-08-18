@@ -1,0 +1,107 @@
+/* about - -us */
+.about-us-section .page-wrapper .notebook img{
+    height: 100vh;
+    opacity: .3;
+    position: absolute;
+    right: 0;
+}
+
+.about-us-section .page-wrapper .about-us{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    filter: drop-shadow(8px 8px 10px #000000);
+}
+
+.about-us-section .page-wrapper .about-us .text{
+    display: flex;
+    flex-direction: column;
+    max-width: var(--step-img-2);
+    border: 10px ridge #ffd277;
+    background: linear-gradient(120deg, #1a1919 30%, #3a3a3a 38%, #3a3a3a 
+    40%, #1a1919 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: shine 3s infinite;
+    margin: var(--step--3) 0;
+    border-radius: 2px;
+}
+  
+.mirror{
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 5px;
+}
+  
+@keyframes shine{
+    100%{
+      background-position: -100% 0;
+    }
+}
+
+.about-us-section .page-wrapper .about-us .text span{
+    font-style: italic;
+    margin: 0 5px;
+    color: aqua;;
+}
+
+.about-us-section .page-wrapper .about-us h1{
+    margin: var(--step--3) 0 var(--step--7) 0;
+    text-align: center;
+    color: #edeaea;
+    font-size: var(--step--5);
+}
+
+.about-us-section .page-wrapper .about-us .text p{
+    margin: var(--step--10) var(--step--4) var(--step--3);
+    text-align: justify;
+    line-height: 1.7;
+    color: #cac8c8;
+    font-size: var(--step--6);
+}
+
+.about-us-section .page-wrapper .about-us .psych{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+    
+}
+
+.about-us-section .page-wrapper .about-us .vp{
+    background-image: url(../images/vp.png);
+    background-color: #ffffff;
+    background-position-x: -20px;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 50px #eeeeee;
+    z-index: 1; 
+}
+
+.about-us-section .page-wrapper .about-us .psych p{
+    font-size: var(--step--7);
+    text-align: justify;
+    max-width: 500px;
+    
+}
+
+
+@media screen and (max-width: 900px){
+
+    .about-us-section .page-wrapper .about-us{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .about-us-section .page-wrapper .about-us .vp{
+        margin-bottom: 0;
+        height: var(--step-img--3);
+        width: var(--step-img--3);
+
+    }
+}

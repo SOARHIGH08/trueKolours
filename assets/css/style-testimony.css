@@ -1,0 +1,106 @@
+/* testimonials - section */
+.testimonials-section{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.testimonials-section .page-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.testimonials-section .page-wrapper .testimonies{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
+}
+  
+.testimonials-section .page-wrapper .testimonial{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3);
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border: 1px ridge #ffd277;
+    background: linear-gradient(120deg, #1a1919 30%, #3a3a3a 38%, #3a3a3a 
+    40%, #1a1919 48%);
+}
+  
+.testimonials-section .page-wrapper .picture-container{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+  
+.testimonials-section .page-wrapper .picture-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.testimonials-section .page-wrapper .rating{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+  
+.testimonials-section .page-wrapper .star{
+    display: inline-block;
+    width: var(--step--5);
+    height: var(--step--5);
+    background-image: url('http://www.pngkey.com/png/full/21-218781_gold-star-png.png');
+    background-size: cover;
+}
+
+.testimonials-section .page-wrapper .testimonies .testimonial h3{
+   font-size: var(--step--6);
+   white-space: nowrap;
+}
+
+.testimonials-section .page-wrapper .testimonies .testimonial div p{
+   font-size: var(--step--7);
+   white-space: nowrap;
+}
+  
+.testimonials-section .page-wrapper .testimonial .testimonial-text{
+    font-style: italic;
+    font-size: var(--step--7);
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 640px){
+  
+    .testimonials-section .page-wrapper .picture-container{
+        width: var(--step-img--6);
+        height: var(--step-img--8);
+    }
+    .testimonials-section .page-wrapper .testimonies{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+  
+    .testimonials-section .page-wrapper .testimonial{
+        text-align: center;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 10px 0;
+        border: 1px ridge #ffd277;
+        background: linear-gradient(120deg, #1a1919 30%, #3a3a3a 38%, #3a3a3a 
+        40%, #1a1919 48%);
+    }
+  
+    .testimonials-section .page-wrapper .testimonial-text{
+        margin: 0 15px;
+    }
+}
