@@ -51,22 +51,38 @@ window.addEventListener('scroll', function(){
     }
 });
 
-// sidebar menu
+// // sidebar menu
 let burger = document.getElementById("burger");
 let sidebar = document.getElementById("sidebar");
 let menuOpen = true;
 
+let closeSidebar = () => {
+  sidebar.classList.add('inactive');
+  sidebar.classList.remove('active');
+  menuOpen = true;
+}
+
+openSidebar = () => {
+  sidebar.classList.add('active');
+  sidebar.classList.remove('inactive');
+  menuOpen = false;
+}
+
 burger.addEventListener("click", () => {
   if (menuOpen) {
-    sidebar.classList.add('active');
-    sidebar.classList.remove('inactive');
-    menuOpen = false;
+    openSidebar();
   } else {
-    sidebar.classList.add('inactive');
-    sidebar.classList.remove('active');
-    menuOpen = true;
+    closeSidebar();
   }
 });
+
+// close sidebar when clicking anywhere on the window
+window.addEventListener("click", (event) => {
+  if (!sidebar.contains(event.target) && !burger.contains(event.target)) {
+    closeSidebar();
+  }
+});
+
 
 // // Change color of navbar on scroll
 // let prevScrollPos = window.pageYOffset;
