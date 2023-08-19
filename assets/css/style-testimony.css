@@ -11,11 +11,15 @@
     overflow: hidden;
 }
 
+.testimonials-section .testimony-text {
+    padding-top: 30px;
+}
+
 .testimonials-section .page-wrapper .testimonies{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin-top: 20px;
+    margin-top: 10px;
 }
   
 .testimonials-section .page-wrapper .testimonial{
@@ -53,25 +57,25 @@
   
 .testimonials-section .page-wrapper .star{
     display: inline-block;
-    width: var(--step--5);
-    height: var(--step--5);
+    width: var(--step--6);
+    height: var(--step--6);
     background-image: url('http://www.pngkey.com/png/full/21-218781_gold-star-png.png');
     background-size: cover;
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial h3{
-   font-size: var(--step--6);
+   font-size: var(--step--7);
    white-space: nowrap;
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial div p{
-   font-size: var(--step--7);
+   font-size: var(--step--8);
    white-space: nowrap;
 }
   
 .testimonials-section .page-wrapper .testimonial .testimonial-text{
     font-style: italic;
-    font-size: var(--step--7);
+    font-size: var(--step--8);
     text-align: justify;
 }
 

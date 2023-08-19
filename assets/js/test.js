@@ -1,3 +1,7 @@
+
+let engBut = document.getElementById("engBut");
+let filBut = document.getElementById("filBut");
+
 let currentQuestionIndex = 0;
 let questions = [];
 let answers = [];
@@ -6,39 +10,52 @@ let totalQuestions = 0;
 let questionsList = document.getElementById("questionsList");
 let answerForm = document.getElementById("answerForm");
 
+
+
+
 // function to display the current question and answers
 let displayQuestion = () => {
-    if (currentQuestionIndex < questions.length) {
-        questionsList.innerHTML = `<div class="question">${questions[currentQuestionIndex]}</div>`;
-
-        answerForm.innerHTML = "";
-
-        // shuffle the answers to present in random order
-        let shuffledAnswers = answers[currentQuestionIndex].map((answer, index) => ({ answer, index }));
-        shuffledAnswers.sort(() => Math.random() - 0.5);
-
-        for (let i = 0; i < shuffledAnswers.length; i++) {
-            let answerLabel = document.createElement("label");
-            answerLabel.innerHTML = `
-                <div class="answer"><input type="radio" name="answer" value="${shuffledAnswers[i].index}">
-                ${shuffledAnswers[i].answer}</div><br>
-            `;
-            answerForm.appendChild(answerLabel);
-        }
-
-        // remove previous event listener, add listener for next question
-        answerForm.removeEventListener("change", nextQuestion);  
-        answerForm.addEventListener("change", nextQuestion);
-
-        document.addEventListener("copy", function (event) {
-            event.preventDefault();
-            questionsList = window.getSelection().toString();
-            answerForm = window.getSelection().toString();
-        });
+    
+    let x = questionsList.innerHTML;
+    if (x == "Analyzing data...") {
+        delayDuration = 4000;
     } else {
-        alert("Test is done!");
-        window.location.href = "result.html";
+        delayDuration = 1000;
     }
+    setTimeout(() => {
+    
+        if (currentQuestionIndex < questions.length) {
+            questionsList.innerHTML = `<div class="question">${questions[currentQuestionIndex]}</div>`;
+
+            answerForm.innerHTML = "";
+
+            // shuffle the answers to present in random order
+            let shuffledAnswers = answers[currentQuestionIndex].map((answer, index) => ({ answer, index }));
+            shuffledAnswers.sort(() => Math.random() - 0.5);
+
+            for (let i = 0; i < shuffledAnswers.length; i++) {
+                let answerLabel = document.createElement("label");
+                answerLabel.innerHTML = `
+                    <div class="answer"><input type="radio" name="answer" value="${shuffledAnswers[i].index}">
+                    ${shuffledAnswers[i].answer}</div><br>
+                `;
+                answerForm.appendChild(answerLabel);
+            }
+
+            // remove previous event listener, add listener for next question
+            answerForm.removeEventListener("change", nextQuestion);  
+            answerForm.addEventListener("change", nextQuestion);
+
+            document.addEventListener("copy", function (event) {
+                event.preventDefault();
+                questionsList = window.getSelection().toString();
+                answerForm = window.getSelection().toString();
+            });
+        } else {
+            alert("Test is done!");
+            window.location.href = "result.html";
+        }
+    }, delayDuration);
 };
 
 // function to move to the next question with a delay and loading message
@@ -53,11 +70,8 @@ let nextQuestion = () => {
         currentQuestionIndex++;
 
         answerForm.innerHTML = `<div class="loading">Evaluating... ${totalQuestions} of ${questions.length}</div>`;
-
-        const delayDuration = 1000;
-        setTimeout(() => {
-            displayQuestion();
-        }, delayDuration);
+            
+        displayQuestion();
     }
 };
 
@@ -87,10 +101,20 @@ let getText = async file => {
 };
 
 // fetch and display questions and answers
-getText("assets/js/qa-fil.json");
+let testContainer = document.getElementById("testContainer");
+let langCont = document.getElementById("langCont");
+engBut.addEventListener("click", () => {
+    getText("assets/js/qa-eng.json");
+    testContainer.style.display = "block";
+    langCont.style.display = "none";
+});
+filBut.addEventListener("click", () => {
+    getText("assets/js/qa-fil.json");
+    testContainer.style.display = "block";
+    langCont.style.display = "none";
+});
 
 let storedUser = JSON.parse(localStorage.getItem("user"));
-
 
 let totalSanguine = 0;
 let totalCholeric = 0;

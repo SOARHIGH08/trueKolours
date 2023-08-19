@@ -4,7 +4,7 @@
 }
 
 .features-section .page-wrapper .text{
-    margin: 50px 10px;
+    margin: 50px 10px 20px;
 }
 
 .features-section .page-wrapper .text p{
@@ -14,9 +14,9 @@
 
 .features-section .page-wrapper .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .features-section .page-wrapper .cards .red:hover,
@@ -54,8 +54,8 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: var(--step-7);
-    height: var(--step-7);
+    width: var(--step-6);
+    height: var(--step-6);
     background: radial-gradient(circle, #ffd277, #77530a);
     border-radius: 10px;
     color: white;
@@ -84,7 +84,7 @@
 }
 
 .features-section .page-wrapper .showFormBtn{
-    margin: 10vh auto;
+    margin: 7vh auto;
 }
 
 .features-section .page-wrapper .read-more{

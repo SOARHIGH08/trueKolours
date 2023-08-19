@@ -17,7 +17,7 @@ window.addEventListener('scroll', function(){
     let topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
     let bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
 
-    // Update visibility of specific <li> tag based on scroll position
+    // update visibility of specific <li> tag based on scroll position
     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
         specificLi.classList.add('active');
         specificLi.classList.remove('inactive');
