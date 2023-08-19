@@ -26,7 +26,7 @@ let displayQuestion = () => {
         }
 
         // remove previous event listener, add listener for next question
-        answerForm.removeEventListener("change", nextQuestion);
+        answerForm.removeEventListener("change", nextQuestion);  
         answerForm.addEventListener("change", nextQuestion);
 
         document.addEventListener("copy", function (event) {
@@ -40,20 +40,27 @@ let displayQuestion = () => {
     }
 };
 
-// function to move to the next question
+// function to move to the next question with a delay and loading message
 let nextQuestion = () => {
     let selectedAnswer = document.querySelector('input[name="answer"]:checked');
 
     if (selectedAnswer) {
         let selectedAnswerIndex = parseInt(selectedAnswer.value);
 
-        // handle the user's answer here if needed
         getResult(currentQuestionIndex, selectedAnswerIndex);
 
         currentQuestionIndex++;
-        displayQuestion();
+
+        answerForm.innerHTML = `<div class="loading">Evaluating...</div>`;
+
+        const delayDuration = 1000;
+        setTimeout(() => {
+            displayQuestion();
+        }, delayDuration);
     }
 };
+
+
 
 // function to fetch text data from a file
 let getText = async file => {

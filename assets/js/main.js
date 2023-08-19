@@ -1,4 +1,4 @@
-// accordion
+// accordion functionality
 let accordionItems = document.querySelectorAll('.accordion-item');
 
 accordionItems.forEach(item => {
@@ -9,11 +9,13 @@ accordionItems.forEach(item => {
     header.addEventListener('click', () => {
         let isOpen = item.classList.contains('open');
 
+        // close all open accordion items and reset icons
         accordionItems.forEach(item => {
             item.classList.remove('open');
-            item.querySelector('.accordion-icon').classList.remove('rotate'); // Remove 'rotate' from all items
+            item.querySelector('.accordion-icon').classList.remove('rotate');
         });
 
+        // toggle the clicked item's state
         if (!isOpen) {
             item.classList.add('open');
             icon.classList.add('rotate');
@@ -21,12 +23,8 @@ accordionItems.forEach(item => {
     });
 });
 
-
-
-// Get the specific <li> tag in the navbar
+// calculate section heights and update <li> visibility on scroll
 var specificLi = document.getElementById('specificLi');
-
-// Calculate the heights of the sections
 var sections = document.querySelectorAll('.section');
 var sectionHeights = [];
 
@@ -34,85 +32,77 @@ sections.forEach(function(section){
     sectionHeights.push(section.offsetHeight);
 });
 
-// Update the visibility of the specific <li> tag based on scroll position
 window.addEventListener('scroll', function(){
     var currentPosition = window.pageYOffset;
 
-    // Calculate the range of sections where the <li> tag should be visible
-    var startSectionIndex = 1; // Second section
-    var endSectionIndex = sectionHeights.length - 2; // Second to last section
+    var startSectionIndex = 1;
+    var endSectionIndex = sectionHeights.length - 2;
 
-    // Calculate the top and bottom positions for the visibility range
     var topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
     var bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
 
-    // Update the visibility of the specific <li> tag
+    // Update visibility of specific <li> tag based on scroll position
     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
         specificLi.classList.add('active');
+        specificLi.classList.remove('inactive');
     } else{
         specificLi.classList.remove('active');
+        specificLi.classList.add('inactive');
     }
 });
 
+// // Change color of navbar on scroll
+// let prevScrollPos = window.pageYOffset;
+// let navLinks = document.getElementsByClassName("navLinks");
+// let currentColorIndex = 0;
+// let colorClasses = ["white", "black"];    
 
+// window.onscroll = function(){
+//     let currentScrollPos = window.pageYOffset;
 
-// change color of navbar
-let prevScrollPos = window.pageYOffset;
-let navLinks = document.getElementsByClassName("navLinks");
-let currentColorIndex = 0;
-let colorClasses = ["white", "black"];    
+//     if (prevScrollPos > currentScrollPos){
+//         navbar.classList.remove("navbar-hidden");
+//     } else{
+//         navbar.classList.add("navbar-hidden");
+//     }
 
-window.onscroll = function(){
-    let currentScrollPos = window.pageYOffset;
+//     prevScrollPos = currentScrollPos;
 
-    if (prevScrollPos > currentScrollPos){
-        navbar.classList.remove("navbar-hidden");
-    } else{
-        navbar.classList.add("navbar-hidden");
-    }
+//     let scrollMultiple = Math.floor(currentScrollPos / window.innerHeight);
+//     let newColorIndex = scrollMultiple % colorClasses.length;
 
-    prevScrollPos = currentScrollPos;
-
-    let scrollMultiple = Math.floor(currentScrollPos / window.innerHeight);
-    let newColorIndex = scrollMultiple % colorClasses.length;
-
-    if (newColorIndex !== currentColorIndex){
-        navbar.classList.remove(colorClasses[currentColorIndex]);
-        navbar.classList.add(colorClasses[newColorIndex]);
+//     // Update navbar and navLinks colors
+//     if (newColorIndex !== currentColorIndex){
+//         navbar.classList.remove(colorClasses[currentColorIndex]);
+//         navbar.classList.add(colorClasses[newColorIndex]);
         
-        let navLinks = navbar.getElementsByClassName("navLinks");
-        
-        for (let i = 0; i < navLinks.length; i++){
-        navLinks[i].classList.remove(colorClasses[currentColorIndex]);
-        navLinks[i].classList.add(colorClasses[newColorIndex]);
-        } 
+//         for (let i = 0; i < navLinks.length; i++){
+//             navLinks[i].classList.remove(colorClasses[currentColorIndex]);
+//             navLinks[i].classList.add(colorClasses[newColorIndex]);
+//         } 
 
-        currentColorIndex = newColorIndex;
-    }
-};
+//         currentColorIndex = newColorIndex;
+//     }
+// };
 
-
-
-//scroll to section
+// Scroll to section on link click
 document.addEventListener("DOMContentLoaded", function(){
-// Add smooth scrolling to internal links
-var scrollLinks = document.querySelectorAll(".scroll-to-section");
-for (var i = 0; i < scrollLinks.length; i++){
-    scrollLinks[i].addEventListener("click", smoothScroll);
-}
+    var scrollLinks = document.querySelectorAll(".scroll-to-section");
+    for (var i = 0; i < scrollLinks.length; i++){
+        scrollLinks[i].addEventListener("click", smoothScroll);
+    }
 
-function smoothScroll(event){
-    event.preventDefault();
-    var targetId = this.getAttribute("href");
-    var targetElement = document.querySelector(targetId);
-    targetElement.scrollIntoView({
-    behavior: "smooth"
-    });
-}
+    function smoothScroll(event){
+        event.preventDefault();
+        var targetId = this.getAttribute("href");
+        var targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 });
 
-
-// // pop up registration
+// Pop up registration form
 let showFormBtns = document.querySelectorAll('.showFormBtn');
 let myForm = document.getElementById('myForm');
 let cancelFormBtn = document.getElementById('cancelFormBtn');
@@ -131,35 +121,31 @@ showFormBtns.forEach(button => {
         // Hide the footer
         footerToHide.style.display = 'none';
 
-        // Add a delay of 500 milliseconds before showing the form section
+        // Show the form section after a delay
         setTimeout(function() {
-
-            
             myForm.style.display = 'block';
         }, 700);
     });
 });
 
 cancelFormBtn.addEventListener('click', function() {
+    // Hide the form and show other sections
     myForm.style.display = 'none';
-
-    // Show all sections except the first section (hero-section)
     sectionsToHide.forEach(section => {
         section.style.display = 'block';
     });
-
-    // Show the footer
     footerToHide.style.display = 'block';
 });
 
 myForm.addEventListener('submit', function(event) {
+    // Prevent form submission and show confirmation popup
     event.preventDefault();
-    
     myForm.style.display = 'none';
     confirmationPopup.style.display = 'block';
 });
 
 closeConfirmationBtn.addEventListener('click', function() {
+    // Close the confirmation popup and reload the page
     confirmationPopup.style.display = 'none';
     location.reload();
 });

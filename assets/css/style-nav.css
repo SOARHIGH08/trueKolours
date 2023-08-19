@@ -49,7 +49,7 @@ nav ul{
     justify-content: flex-end;;
 }
 
-nav .hidden-li{
+nav .hidden-li{ 
     display: none;
 }
 

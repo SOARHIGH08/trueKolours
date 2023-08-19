@@ -66,3 +66,38 @@
     font-size: var(--step--5);
 }
 
+.hero-section .hidden-li{ 
+    opacity: 0;
+}
+
+.hero-section .active{
+    opacity: 1;
+    animation: moveRightToLeft .1s linear;
+}
+
+.hero-section .inactive{
+    animation: moveLeftToRight .3s linear;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+  }
+
