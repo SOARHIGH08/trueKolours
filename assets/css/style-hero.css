@@ -77,7 +77,7 @@
 .hero-section .page-wrapper .call-to-action .cta-buts{
     width: var(--step-7);
     height: var(--step-1);
-    font-size: var(--step--3);
+    font-size: var(--step--4);
     border: none;
     border-radius: 10px;
     background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);

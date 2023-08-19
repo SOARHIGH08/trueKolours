@@ -24,27 +24,29 @@ accordionItems.forEach(item => {
 });
 
 // calculate section heights and update <li> visibility on scroll
-var specificLi = document.getElementById('specificLi');
-var sections = document.querySelectorAll('.section');
-var sectionHeights = [];
+let specificLi = document.getElementById('specificLi');
+let sections = document.querySelectorAll('.section');
+let sectionHeights = [];
+specificLi.style.display = "none";
 
 sections.forEach(function(section){
     sectionHeights.push(section.offsetHeight);
 });
 
 window.addEventListener('scroll', function(){
-    var currentPosition = window.pageYOffset;
+    let currentPosition = window.pageYOffset;
 
-    var startSectionIndex = 1;
-    var endSectionIndex = sectionHeights.length - 2;
+    let startSectionIndex = 1;
+    let endSectionIndex = sectionHeights.length - 2;
 
-    var topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
-    var bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
+    let topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
+    let bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
 
     // Update visibility of specific <li> tag based on scroll position
     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
         specificLi.classList.add('active');
         specificLi.classList.remove('inactive');
+        specificLi.style.display = "block";
     } else{
         specificLi.classList.remove('active');
         specificLi.classList.add('inactive');
@@ -56,16 +58,23 @@ let burger = document.getElementById("burger");
 let sidebar = document.getElementById("sidebar");
 let menuOpen = true;
 
+
+
+burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
+// burger.innerHTML = '<iconify-icon icon="fxemoji:hamburger"></iconify-icon>';
+
 let closeSidebar = () => {
   sidebar.classList.add('inactive');
   sidebar.classList.remove('active');
   menuOpen = true;
+  burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
 }
 
 openSidebar = () => {
   sidebar.classList.add('active');
   sidebar.classList.remove('inactive');
   menuOpen = false;
+  burger.innerHTML = '<iconify-icon icon="ph:x-bold"></iconify-icon>';
 }
 
 burger.addEventListener("click", () => {
@@ -76,12 +85,6 @@ burger.addEventListener("click", () => {
   }
 });
 
-// close sidebar when clicking anywhere on the window
-window.addEventListener("click", (event) => {
-  if (!sidebar.contains(event.target) && !burger.contains(event.target)) {
-    closeSidebar();
-  }
-});
 
 
 // // Change color of navbar on scroll
@@ -120,15 +123,15 @@ window.addEventListener("click", (event) => {
 
 // Scroll to section on link click
 document.addEventListener("DOMContentLoaded", function(){
-    var scrollLinks = document.querySelectorAll(".scroll-to-section");
-    for (var i = 0; i < scrollLinks.length; i++){
+    let scrollLinks = document.querySelectorAll(".scroll-to-section");
+    for (let i = 0; i < scrollLinks.length; i++){
         scrollLinks[i].addEventListener("click", smoothScroll);
     }
 
     function smoothScroll(event){
         event.preventDefault();
-        var targetId = this.getAttribute("href");
-        var targetElement = document.querySelector(targetId);
+        let targetId = this.getAttribute("href");
+        let targetElement = document.querySelector(targetId);
         targetElement.scrollIntoView({
             behavior: "smooth"
         });

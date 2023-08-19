@@ -15,7 +15,7 @@
 }
 
 .burger iconify-icon {
-    font-size: var(--step--2);
+    font-size: 36px;
     text-shadow: -2px -5px 5px rgb(0, 0, 0);
 }
 
@@ -48,10 +48,10 @@
 .floating-cta {
     position: fixed;
     top: 0;
-    right: 25px;
+    right: 7px;
     padding: 10px;
     margin: 7px;
-    width: 190px;
+    width: 180px;
     height: 45px;
     background-color: rgb(255, 145, 0);
     box-shadow:
@@ -60,23 +60,10 @@
 
     border-radius: 37% 34% 36% 26% / 10% 36% 34% 34% ;
     z-index: 9;
-    animation: pulse 1s ease infinite;
-}
-
-@keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(0);
-    }
 }
 
 .floating-cta h1 {
-    font-size: var(--step--5);
+    font-size: 17px;
 }
 
 .hero-section .hidden-li,
