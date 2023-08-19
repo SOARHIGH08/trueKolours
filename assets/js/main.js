@@ -51,6 +51,23 @@ window.addEventListener('scroll', function(){
     }
 });
 
+// sidebar menu
+let burger = document.getElementById("burger");
+let sidebar = document.getElementById("sidebar");
+let menuOpen = true;
+
+burger.addEventListener("click", () => {
+  if (menuOpen) {
+    sidebar.classList.add('active');
+    sidebar.classList.remove('inactive');
+    menuOpen = false;
+  } else {
+    sidebar.classList.add('inactive');
+    sidebar.classList.remove('active');
+    menuOpen = true;
+  }
+});
+
 // // Change color of navbar on scroll
 // let prevScrollPos = window.pageYOffset;
 // let navLinks = document.getElementsByClassName("navLinks");
