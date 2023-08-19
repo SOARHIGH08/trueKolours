@@ -1,7 +1,11 @@
+.page-wrapper {
+    flex-direction: column;
+}
 
 .test-container {
     width: min(600px, 90%);    
-    margin: var(--step-4) auto;
+    margin: var(--step-0) auto;
+    margin-bottom: 0;    
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.349);
@@ -13,13 +17,19 @@
     border-radius: 10px 10px 0 0;
     border-bottom: 1px solid #ccc;
     background-color: #e4e4e4;
+    text-align: center;
+    padding: 20px;
 }
 
 .question {
-    margin: 5px 0;
-    padding: 10px 20px;  
+    margin: 5px 0;  
     font-weight: 700;
     font-size: 14px;
+}
+
+.answers-container{
+    text-align: center;
+    padding: 20px 0;
 }
 
 .answer {

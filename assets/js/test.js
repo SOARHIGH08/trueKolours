@@ -1,6 +1,7 @@
 let currentQuestionIndex = 0;
 let questions = [];
 let answers = [];
+let totalQuestions = 0;
 
 let questionsList = document.getElementById("questionsList");
 let answerForm = document.getElementById("answerForm");
@@ -51,7 +52,7 @@ let nextQuestion = () => {
 
         currentQuestionIndex++;
 
-        answerForm.innerHTML = `<div class="loading">Evaluating...</div>`;
+        answerForm.innerHTML = `<div class="loading">Evaluating... ${totalQuestions} of ${questions.length}</div>`;
 
         const delayDuration = 1000;
         setTimeout(() => {
@@ -95,7 +96,6 @@ let totalSanguine = 0;
 let totalCholeric = 0;
 let totalMelancholic = 0;
 let totalPhlegmatic = 0;
-let totalQuestions = 0;
 
 if (storedUser == null) {
     totalSanguine = 0;

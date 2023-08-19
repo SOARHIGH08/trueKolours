@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/style-test.css">
-  <title>MP2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-sidebar.css">
+    <link rel="stylesheet" href="assets/css/style-test.css">
+    <title>Personality Test</title>
 </head>
 <body>
   
   <main class="test">
-    <div class="page-wrapper">
+    <div class="sidebar-container">
+      <div class="logo-text" id="logo-text">
+          <iconify-icon icon="ic:twotone-color-lens"></iconify-icon>
+          <p>True Kolours</p>
+      </div>
+
+      <div class="burger" id="burger"></div>
+
+      <div class="sidebar hidden-li" id="sidebar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Four Temperaments</a></li>
+              <li><a href="test.html">Personality Test</a></li>
+              <li><a href="index.html"></a>About Us</a></li>
+          </ul>
+      </div>
+
+      <div class="floating-cta hidden-li" id="specificLi">
+          <h1>Get Involved</h1>
+      </div>
+  </div>
+    <div class="page-wrapper">      
+      
       <div class="test-container">
-        <div class="question-container" id="questionsList"></div> <!-- populate the questions -->
-        <form class="answers-container" id="answerForm"></form><!-- populate the answers -->
+        
+        <div class="question-container" id="questionsList">Analyzing your data...</div>
+        <form class="answers-container" id="answerForm">Preparing questions...</form>
       </div>
     </div>
   </main>
 
+  <script src="assets/js/sidebar.js"></script>
   <script src="assets/js/test.js"></script>
 </body>
 </html>

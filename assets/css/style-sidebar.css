@@ -1,3 +1,18 @@
+.logo-text{    
+    color: #77530a;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    font-size: var(--step--1);
+    display: flex;
+}
+
+.logo-text p {
+    font-size: var(--step--4);
+    font-weight: 500;
+    font-style: italic  ;
+}
+
 .burger {
     position: fixed;
     top: 0;
@@ -66,17 +81,17 @@
     font-size: 17px;
 }
 
-.hero-section .hidden-li,
+.sidebar-container .hidden-li,
 .sidebar .hidden-li{ 
     opacity: 0;
 }
 
-.hero-section .active{
+.sidebar-container .active{
     opacity: 1;
     animation: moveRightToLeft .1s linear;
 }
 
-.hero-section .inactive{
+.sidebar-container .inactive{
     animation: moveLeftToRight .3s linear;
 }
 
