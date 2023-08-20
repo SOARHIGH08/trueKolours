@@ -2,13 +2,14 @@
 let specificLi = document.getElementById('specificLi');
 let sections = document.querySelectorAll('.section');
 let sectionHeights = [];
+specificLi.style.display = "none";
 
 sections.forEach(function(section){
     sectionHeights.push(section.offsetHeight);
 });
 
 window.addEventListener('scroll', function(){
-    let currentPosition = window.pageYOffset;
+    let currentPosition = window.scrollY;
 
     let startSectionIndex = 1;
     let endSectionIndex = sectionHeights.length - 2;
@@ -18,8 +19,9 @@ window.addEventListener('scroll', function(){
 
     // update visibility of specific <li> tag based on scroll position
     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
+      specificLi.style.display = "block";
         specificLi.style.animation = "CTAmoveLeftToRight .1s linear forwards";
-    } else{
+    } else {
         specificLi.style.animation = "CTAmoveRightToLeft .1s linear forwards";
     }
 });

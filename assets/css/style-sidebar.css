@@ -63,7 +63,7 @@
 .floating-cta {
     position: fixed;
     top: 0;
-    right: 7px;
+    right: -330px;
     padding: 10px;
     margin: 7px;
     width: 180px;
@@ -91,12 +91,12 @@
     100% {right: -330px}
 }
 
-@keyframes CTAmoveRightToLeft {
+@keyframes CTAmoveLeftToRight {
     0% {right: -330px}
     100% {right: 7px}
 }
 
-@keyframes CTAmoveLeftToRight {
+@keyframes CTAmoveRightToLeft {
     0% {right: 7px}
     100% {right: -330px}
 }
