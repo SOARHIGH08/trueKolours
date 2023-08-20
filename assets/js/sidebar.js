@@ -39,15 +39,17 @@ burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-i
 // burger.innerHTML = '<iconify-icon icon="fxemoji:hamburger"></iconify-icon>';
 
 let closeSidebar = () => {
-  sidebar.classList.add('inactive');
-  sidebar.classList.remove('active');
+  // sidebar.classList.add('inactive');
+  // sidebar.classList.remove('active');
+  sidebar.style.animation = "moveLeftToRight .1s linear forwards";
   menuOpen = true;
   burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
 }
 
 openSidebar = () => {
-  sidebar.classList.add('active');
-  sidebar.classList.remove('inactive');
+  // sidebar.classList.add('active');
+  // sidebar.classList.remove('inactive');
+  sidebar.style.animation = "moveRightToLeft .1s linear forwards";
   menuOpen = false;
   burger.innerHTML = '<iconify-icon icon="ph:x-bold"></iconify-icon>';
 }

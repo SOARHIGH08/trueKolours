@@ -37,7 +37,7 @@
 .sidebar {
     position: fixed;
     top: 40px;
-    right: -120px;
+    right: -330px;
     padding: 10px;
     margin: 7px;
     width: 320px;
@@ -85,35 +85,29 @@
 .sidebar .hidden-li{ 
     opacity: 0;
 }
-
+/* 
 .sidebar-container .active{
-    opacity: 1;
     animation: moveRightToLeft .1s linear;
 }
 
 .sidebar-container .inactive{
     animation: moveLeftToRight .3s linear;
-}
+} */
 
 @keyframes moveRightToLeft {
     0% {
-      transform: translateX(10%);
-      opacity: 0;
+        right: -330px;
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        right: -110px;
     }
 }
 
 @keyframes moveLeftToRight {
     0% {
-        transform: translateX(0);
-        opacity: 1;
+        right: -110px;
     }
     100% {
-      transform: translateX(10%);
-      opacity: 0;
+        right: -330px;
     }
   }
-
