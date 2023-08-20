@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-sidebar.css">
+    <link rel="stylesheet" href="assets/css/style-result.css">
     <link rel="stylesheet" href="assets/css/style-test.css">
     <title>Result</title>
 </head>
@@ -36,18 +37,55 @@
           <h1>Get Involved</h1>
       </div>
     </div>
-    <div class="page-wrapper">      
-      <div>
-        <h1 id="saguine"></h1>
-        <h1 id="choleric"></h1>
-        <h1 id="melancholic"></h1>
-        <h1 id="phlegmatic"></h1>
-      </div>        
+    <div class="page-wrapper">    
+      <div class="result-title">
+        <h3>Personality Test Result</h3>
+      </div>   
+        <div class="result-container" id="resultContainer">
+           
+          <div class="result-subtitle">
+            <h4>You are...</h4>
+          </div>                 
+            <div class="card-result red" id="red">
+              <div class="icon-red icon-result">
+                
+              </div>
+              <div class="percent">
+                <p class="text" id="rPercent"></p>
+              </div>
+            </div>
+            
+            <div class="card-result blue" id="blue">
+              <div class="icon-blue icon-result"></div>
+              <div class="percent">
+                <p class="text" id="bPercent"></p>
+              </div>
+            </div>
+            
+            <div class="card-result green" id="green">
+              <div class="icon-green icon-result"></div>
+              <div class="percent">
+                <p class="text" id="gPercent"></p>
+              </div>
+            </div>
+
+            <div class="card-result yellow" id="yellow">
+              <div class="icon-yellow icon-result"></div>
+              <div class="percent">
+                <p class="text" id="yPercent"></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="details-container">
+          d
+        </div>
+      </div>  
     </div>
   </main>
   
   <script src="assets/js/sidebar.js"></script>
-  <script src="assets/js/result.js" type="module"></script>
+  <script src="assets/js/result.js"></script>
 
 </body>
 </html>

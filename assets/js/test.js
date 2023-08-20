@@ -1,4 +1,3 @@
-
 let engBut = document.getElementById("engBut");
 let filBut = document.getElementById("filBut");
 
@@ -9,9 +8,6 @@ let totalQuestions = 0;
 
 let questionsList = document.getElementById("questionsList");
 let answerForm = document.getElementById("answerForm");
-
-
-
 
 // function to display the current question and answers
 let displayQuestion = () => {
