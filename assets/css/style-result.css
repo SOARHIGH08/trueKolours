@@ -1,11 +1,12 @@
 .result-title {
-    margin-top: 20px;
+    margin-block: 15px;
     text-align: center;
+    color: #494949;
 }
 
 .result-subtitle {
-    background-color: #3d3f3f;
-    color: rgb(216, 216, 216);
+    background-color: #2c2a2a;
+    color: #ccc;
     padding: 5px 10px;
 }
 
@@ -14,17 +15,21 @@
 }
 
 .result-container {
+    background: linear-gradient(45deg, #D3A23C, #AF7838, #FBFAB7, #C29537, #9D6803);
     display: flex;
     flex-direction: column;;
     margin: 10px auto;
     width: 80%;
     height: 100%;
-    border: 3px solid #474747;
-    box-shadow: -2px 0 10px 5px #000000cb;
+    box-shadow: 
+        0 0 0 2px black,
+        0 0 20px 4px #AF7838,
+        -2px 0 10px 5px #0000009f;
     overflow: auto;
 }
 
 .card-result {
+    box-shadow: 0 0 2px 1px #505050;
     background-color: antiquewhite;
     height: calc(100% / 4);
     width: fit-content;
@@ -41,18 +46,22 @@
 
 .red {
     background-color: #EC3237;
+    background: linear-gradient(90deg, #EC3237,#EC3237,#EC3237,hsla(0, 0%, 100%, 0.255));
 }
 
 .blue {
     background-color: #0098DB;
+    background: linear-gradient(90deg, #0098DB,#0098DB,#0098DB,hsla(0, 0%, 100%, 0.255));
 }
 
 .green {
     background-color: #00A85A;
+    background: linear-gradient(90deg, #00A85A,#00A85A,#00A85A,hsla(0, 0%, 100%, 0.255));
 }
 
 .yellow {
     background-color: #FFDA4B;
+    background: linear-gradient(90deg, #FFDA4B,#FFDA4B,#FFDA4B,hsla(0, 0%, 100%, 0.255));
 }
 
 .icon-red {
@@ -81,6 +90,7 @@
     align-items: center;
     text-align: center;
     background-color: #0000005b;
+    box-shadow: 0 0 2px 1px #504f4f;
     color: rgb(202, 202, 202);
     white-space: wrap;
     height: 100%;
