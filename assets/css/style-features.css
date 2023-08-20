@@ -19,6 +19,18 @@
     gap: 10px;
 }
 
+.features-section .page-wrapper .cards .red:hover .tip,
+.red:hover .second-text,
+.features-section .page-wrapper .cards .blue:hover .tip,
+.blue:hover .second-text,
+.features-section .page-wrapper .cards .green:hover .tip,
+.green:hover .second-text,
+.features-section .page-wrapper .cards .yellow:hover .tip,
+.yellow:hover .second-text {
+    display: none;
+} 
+
+
 .features-section .page-wrapper .cards .red:hover,
 .features-section .page-wrapper .cards .blue:hover,
 .features-section .page-wrapper .cards .green:hover,
@@ -29,23 +41,25 @@
     outline-offset: 10px;
 }
 
+
 .features-section .page-wrapper .cards .red:hover{
-    background-color: #c70324;
+    background: url("../images/red.png");
+    background-size: contain;
 }
   
 .features-section .page-wrapper .cards .blue:hover{
-    background: transparent;
-    background-color: #024dc5;
+    background: url("../images/blue.png");
+    background-size: contain;
 }
   
 .features-section .page-wrapper .cards .green:hover{
-    background: transparent;
-    background-color: #02c64a;
+    background: url("../images/green.png");
+    background-size: contain;
 }
   
 .features-section .page-wrapper .cards .yellow:hover{
-    background: transparent;
-    background-color: #c7d902;
+    background: url("../images/yellow.png");
+    background-size: contain;
 }
   
 .features-section .page-wrapper .cards .card{
