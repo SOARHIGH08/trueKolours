@@ -81,33 +81,22 @@
     font-size: 17px;
 }
 
-.sidebar-container .hidden-li,
-.sidebar .hidden-li{ 
-    opacity: 0;
-}
-/* 
-.sidebar-container .active{
-    animation: moveRightToLeft .1s linear;
-}
-
-.sidebar-container .inactive{
-    animation: moveLeftToRight .3s linear;
-} */
-
 @keyframes moveRightToLeft {
-    0% {
-        right: -330px;
-    }
-    100% {
-        right: -110px;
-    }
+    0% {right: -330px}
+    100% {right: -110px}
 }
 
 @keyframes moveLeftToRight {
-    0% {
-        right: -110px;
-    }
-    100% {
-        right: -330px;
-    }
-  }
+    0% {right: -110px}
+    100% {right: -330px}
+}
+
+@keyframes CTAmoveRightToLeft {
+    0% {right: -330px}
+    100% {right: 7px}
+}
+
+@keyframes CTAmoveLeftToRight {
+    0% {right: 7px}
+    100% {right: -330px}
+}

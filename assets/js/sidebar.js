@@ -2,7 +2,6 @@
 let specificLi = document.getElementById('specificLi');
 let sections = document.querySelectorAll('.section');
 let sectionHeights = [];
-specificLi.style.display = "none";
 
 sections.forEach(function(section){
     sectionHeights.push(section.offsetHeight);
@@ -19,12 +18,9 @@ window.addEventListener('scroll', function(){
 
     // update visibility of specific <li> tag based on scroll position
     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
-        specificLi.classList.add('active');
-        specificLi.classList.remove('inactive');
-        specificLi.style.display = "block";
+        specificLi.style.animation = "CTAmoveLeftToRight .1s linear forwards";
     } else{
-        specificLi.classList.remove('active');
-        specificLi.classList.add('inactive');
+        specificLi.style.animation = "CTAmoveRightToLeft .1s linear forwards";
     }
 });
 
@@ -36,11 +32,8 @@ let menuOpen = true;
 
 
 burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
-// burger.innerHTML = '<iconify-icon icon="fxemoji:hamburger"></iconify-icon>';
 
 let closeSidebar = () => {
-  // sidebar.classList.add('inactive');
-  // sidebar.classList.remove('active');
   sidebar.style.animation = "moveLeftToRight .1s linear forwards";
   menuOpen = true;
   burger.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
