@@ -92,9 +92,9 @@ ysDetails.innerHTML = ysContent;
 
 let ywDetails = document.getElementById("ywDetails");
 let yw = [
-    "-impulsive",
+    "impulsive",
     "chronically late",
-    "shamless",
+    "shamleess",
     "forgetful",
     "a compulsive talker",
     "too loud",
@@ -113,7 +113,7 @@ let csDetails = document.getElementById("csDetails");
 let cs = [
     "ambitious",
     "passionate",
-    "eader-like",
+    "leader-like",
     "focused",
     "efficient",
     "practical",
@@ -140,7 +140,7 @@ let cw = [
     "uncomfortable around emotion",
     "low on empathy",
     "discouraged by failures",
-    "-oo busy for people",
+    "too busy for people",
     "intolerant",
     "a leader who demands",
     "loyalty"
@@ -188,7 +188,7 @@ let ps = [
     "quiet and calm",
     "content with themselves",
     "kind",
-    "onsistent",
+    "consistent",
     "a steady and faithful friend",
     "accepting",
     "afectionate",
