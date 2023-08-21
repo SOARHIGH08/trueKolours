@@ -37,7 +37,7 @@
 .sidebar {
     position: fixed;
     top: 40px;
-    right: -330px;
+    right: -335px;
     padding: 10px;
     margin: 7px;
     width: 320px;
@@ -82,13 +82,13 @@
 }
 
 @keyframes moveRightToLeft {
-    0% {right: -330px}
+    0% {right: -335px}
     100% {right: -110px}
 }
 
 @keyframes moveLeftToRight {
     0% {right: -110px}
-    100% {right: -330px}
+    100% {right: -335px}
 }
 
 @keyframes CTAmoveLeftToRight {

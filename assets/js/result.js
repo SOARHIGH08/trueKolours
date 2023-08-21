@@ -70,3 +70,159 @@ window.addEventListener("resize", function() {;
     yellow.style.width = `${yTotalWidth}px`;
     
 });
+
+let ysDetails = document.getElementById("ysDetails");
+let ys = [
+    "sociable",
+    "charismatic",
+    "outgoing",
+    "confident",
+    "warm-hearted",
+    "pleasant",
+    "lively",
+    "optimistic",
+    " fun lover",
+    "spontaneous",
+    "a preventer of dull moments",
+    "quick apologizer",
+    "an easy friend maker"
+];
+let ysContent = ys.join("<br><br>");
+ysDetails.innerHTML = ysContent;
+
+let ywDetails = document.getElementById("ywDetails");
+let yw = [
+    "-impulsive",
+    "chronically late",
+    "shamless",
+    "forgetful",
+    "a compulsive talker",
+    "too loud",
+    "sometimes too happy",
+    "distractible",
+    "not interested in following through with tasks that are boring",
+    "self-absorbed",
+    "an exaggerator",
+    "someone who appears",
+    "unauthentic"
+];
+let ywContent = yw.join("<br><br>");
+ywDetails.innerHTML = ywContent;
+
+let csDetails = document.getElementById("csDetails");
+let cs = [
+    "ambitious",
+    "passionate",
+    "eader-like",
+    "focused",
+    "efficient",
+    "practical",
+    "good at planning",
+    "good at problem solving",
+    "confident",
+    "motivating",
+    "a delegator",
+    "usually right",
+    "great in an emergency"
+];
+let csContent = cs.join("<br><br>");
+csDetails.innerHTML = csContent;
+
+let cwDetails = document.getElementById("cwDetails");
+let cw = [
+    "agressive",
+    "domineering",
+    "infexible",
+    "impatient",
+    "rude and tactless",
+    "argumentative",
+    "unable to relax",
+    "uncomfortable around emotion",
+    "low on empathy",
+    "discouraged by failures",
+    "-oo busy for people",
+    "intolerant",
+    "a leader who demands",
+    "loyalty"
+];
+let cwContent = cw.join("<br><br>");
+cwDetails.innerHTML = cwContent;
+
+let msDetails = document.getElementById("msDetails");
+let ms = [
+    "thoughtful",
+    "considerate",
+    "cautious",
+    "organized",
+    "an excessive planner",
+    "schedule oriented",
+    "detailed",
+    "highly creative in poetry, art and invention",
+    "independent",
+    "good at preventing problems"
+];
+let msContent = ms.join("<br><br>");
+msDetails.innerHTML = msContent;
+
+let mwDetails = document.getElementById("mwDetails");
+let mw = [
+    "obsessive",
+    "too cautious",
+    "prone to depression",
+    "prone to moodiness",
+    "perfectionistic",
+    "pessimistic",
+    "difficult to please",
+    "deeply affected by tragedy",
+    "a person with tunnel vision",
+    "sometimes a procrastinator",
+    "discontent with themselves and others",
+    "prone to play the martyr"
+];
+let mwContent = mw.join("<br><br>");
+mwDetails.innerHTML = mwContent;
+
+let psDetails = document.getElementById("psDetails");
+let ps = [
+    "relaxed",
+    "quiet and calm",
+    "content with themselves",
+    "kind",
+    "onsistent",
+    "a steady and faithful friend",
+    "accepting",
+    "afectionate",
+    "diplomatic",
+    "peacemaking",
+    "rational",
+    "curious",
+    "observant",
+    "an easy friend maker"
+];
+let psContent = ps.join("<br><br>");
+psDetails.innerHTML = psContent;
+
+let pwDetails = document.getElementById("pwDetails");
+let pw = [
+    "sometimes shy",
+    "fearful of change",
+    "prone to laziness",
+    "stubborn",
+    "passive-agressive",
+    "indecisive",
+    "permissive",
+    "not goal oriented",
+    "unenthusiastic",
+    "too compromising",
+    "undisciplined",
+    "sarcastic",
+    "discouraging",
+    "non-participative"
+];
+let pwContent = pw.join("<br><br>");
+pwDetails.innerHTML = pwContent;
+
+
+
+
+
