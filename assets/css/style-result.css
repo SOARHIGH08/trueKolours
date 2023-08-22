@@ -17,6 +17,10 @@
     text-align: center;
     justify-content: space-evenly;
     flex-wrap: wrap;   
+}
+
+.page-wrapper {
+    height: 100%;
 
 }
 

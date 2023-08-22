@@ -97,8 +97,9 @@
     transform: scale(0.9, 0.9);
 }
 
-.features-section .page-wrapper .showFormBtn{
+.features-section .page-wrapper a{
     margin: 7vh auto;
+    color: white;
 }
 
 .features-section .page-wrapper .read-more{
