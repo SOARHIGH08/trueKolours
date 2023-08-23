@@ -19,7 +19,13 @@
     margin: 0 40px;
     text-align: justify;
     font-family: 'Caveat', sans-serif;
-    font-size: var(--step--5);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.problem-section .page-wrapper .prob p {    
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
 }
 
 .problem-section .page-wrapper .prob img{

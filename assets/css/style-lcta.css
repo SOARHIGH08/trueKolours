@@ -23,6 +23,8 @@
 .call-to-action-section .page-wrapper h1{
     text-align: center;
     margin: 0 10px;
+    font-size: 38px;
+    font-weight: 500;
 }
 
 .call-to-action-section .page-wrapper .last-cta-buts{

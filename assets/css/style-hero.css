@@ -10,7 +10,7 @@
 .hero-section .page-wrapper .text{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 100px;
     z-index: 1;
 } 
@@ -29,20 +29,21 @@
 
 .hero-section .page-wrapper .text h1{
     font-size: var(--step--1);
-    margin-top: 20px;
+    margin-block: 20px;
     color: #77530a;
-    font-family: 'Caveat', sans-serif;
+    font-family: 'Abel', sans-serif;
 }   
 
-.hero-section .page-wrapper .text h2{
+.hero-section .page-wrapper .text h2`{
     color: #4f4242;
-    margin-top: 10px;
     font-size: var(--step--4);
 }
 
 .hero-section .page-wrapper .text .call-to-action{
     margin: 30px 30px 0 30px;
     width: 100%;
+    display: flex;
+    justify-content: center ;
     height: 50%;
 }
 
@@ -74,23 +75,6 @@
     overflow: hidden;
     animation: glow 3s infinite ease-in-out;
 }
-
-/* @keyframes glow{
-    0%{
-        box-shadow: 0 2px 0px #f9ba3b;
-        box-shadow: 0 2px 0px #6d3e01;
-        background-position: 0 0;
-    }
-    50%{
-        box-shadow: 0 2px 50px #6d3e01;
-        background-position: -100% 0;
-    }
-    100%{
-        box-shadow: 0 2px 0px #f9ba3b;
-        box-shadow: 0 2px 0px #6d3e01;
-        background-position: 0 0;
-    }
-} */
 
 .page-wrapper .cta-buts::before{
     position: absolute;

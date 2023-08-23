@@ -29,6 +29,7 @@
     color: #b17702;  
     padding: 50px; 
     text-align: center;
+    font-size: 30px;  
 }
 
 .benefits-section .page-wrapper .gallery-container .img1{
@@ -79,7 +80,7 @@
 .benefits-section .page-wrapper .gallery-text .text{
     padding: 5px 5px;
     display: flex;
-    20px-6);
+    font-size: 20px;
     align-items: center;
 }
 
@@ -125,6 +126,9 @@
 }
 
 @media screen and (max-width: 600px){
+    .benefits-section .page-wrapper .gallery-container .img{
+        display: none;
+    }
 
     .benefits-section .page-wrapper .gallery-text{
         width: 100%;

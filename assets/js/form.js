@@ -1,41 +1,33 @@
 let slctRegion = document.querySelector("#slctRegion")
-let getRegion = async() => {
-    let res = await fetch("https://ph-locations-api.buonzz.com/v1/regions");
+
+
+fetch("https://psgc.gitlab.io/api/regions.json")
+.then(res => res.json())
+.then(data => {
+
+    let regions = ""
+    data.forEach(x => {
+        regions += `<option value="${x.code}">${x.name}</option>`
+    })
+    slctRegion.innerHTML = regions;
+})
+let slctProvince = document.querySelector("#slctProvince")
+let getRegion = async(e) => {
+    const {value } = e.target
+    let res = await fetch(`https://psgc.gitlab.io/api/regions/${value}/provinces.json`);
     console.log(res);
     let data = await res.json();
 
     console.log(data);
     console.log(data.data);
-    let region = data.data;
-
-    let txt = "";
-    
-    region.forEach((x)=>{
-        txt += `<option>${x.name}</option>`
-    })
-        slctRegion.innerHTML = txt;
-
+    let datas = data;
+    let province = ""
+    datas.forEach(x => {
+        province +=`<option value="${x.name}">${x.name}</option>`
+        
+});
+slctProvince.innerHTML = province
 }
-getRegion();
-
-let slctProvince = document.querySelector("#slctProvince")
-let getProvince = async() => {
-    let res = await fetch("https://ph-locations-api.buonzz.com/v1/provinces");
-    console.log(res);
-    let data = await res.json();
-    // console.log(data);
-    // console.log(data.data);
-    let province = data.data;
-
-    let txt = "";
-    
-    province.forEach((x)=>{
-        txt += `<option>${x.name}</option>`
-    })
-        slctProvince.innerHTML = txt;
-
-}
-getProvince();
 
 let firstName = document.querySelector("#firstName");
 let lastName = document.querySelector("#lastName");
@@ -47,17 +39,21 @@ let submitBtn = document.querySelector("#submitBtn");
 let confirmationPopup = document.getElementById('confirmationPopup');
 
 let submitEntries =JSON.parse(localStorage.getItem("submitEntries"));
-console.log(submitEntries);
+// console.log(submitEntries);
 
-let submit = (event) =>{
+
+submitBtn.addEventListener("click",  (event) =>{
     event.preventDefault();
+    myForm.style.display = 'none';
+    confirmationPopup.style.display = 'block';
+    let submitEntries =JSON.parse(localStorage.getItem("submitEntries"));
 
-    let n = localStorage.getItem("idValue");
+    let n = JSON.parse(localStorage.getItem("idValue")) || [];
 
     let submitItem ={
         firstName: firstName.value,
         lastName:lastName.value,
-       slctProvince : slctProvince.value,
+        slctProvince : slctProvince.value,
         slctRegion: slctRegion.value,
         email: email.value,
         contactNumber: contactNumber.value,
@@ -70,11 +66,9 @@ let submit = (event) =>{
        }
        submitEntries.push(submitItem);
 
-       localStorage.setItem("submitEntries", JSON.stringify(submitItem));
+       localStorage.setItem("submitEntries", JSON.stringify(submitEntries));
        localStorage.setItem("idValue", n);
     //    dispalyEntries();
-    myForm.style.display = 'none';
-    confirmationPopup.style.display = 'block';
+  
 }
-
-submitBtn.addEventListener("click", submit);
+);

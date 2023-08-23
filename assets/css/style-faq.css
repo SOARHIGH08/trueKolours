@@ -6,7 +6,8 @@
 }
 
 .faq-section p{
-    font-size: var(--step--6);
+    font-size: var(--step--6);  
+    font-family: 'Abel', sans-serif;
 }
 
 .faq-section .page-wrapper{

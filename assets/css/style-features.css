@@ -7,10 +7,15 @@
     margin: 50px 10px 20px;
 }
 
+.features-section .page-wrapper .text h1{
+    font-size: 28px;  
+}
+
 .features-section .page-wrapper .text p{
     margin: 8px;
     text-align: justify;
-    font-size: var(--step--6);
+    font-size: 16px;  
+    font-family: 'Abel', sans-serif;
 }
 
 .features-section .page-wrapper .cards{
@@ -241,4 +246,9 @@
         font-size: var(--step--7);
         margin: 0 20px;
     }
+
+    .features-section .page-wrapper .text p{
+        font-size: 14px;  
+    }
+
 }

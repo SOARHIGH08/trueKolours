@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/style-popup-reg.css">
     <link rel="stylesheet" href="assets/css/style-prob.css">
     <link rel="stylesheet" href="assets/css/style-testimony.css">
+    <link rel="stylesheet" href="assets/css/style-video.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Mini Project 2</title>
@@ -42,14 +43,14 @@
 
     <section class="section hero-section" id="heroSection">            
         <div class="sidebar-container">
-            <div class="floating-cta" id="specificLi">
+            <div class="floating-cta showFormBtn" id="specificLi">
                 <h1>Get Involved</h1>
             </div>
         </div>
 
         <div class="page-wrapper">
             <div class="text">
-                <h1>PERSONALITY TEST:</h1>
+                <h1>PERSONALITY TEST</h1>
                 <h2>ARE YOU A LEADER,THINKER,<h2>TALKER,    OR PEACEMAKER?</h2>
                 <div class="icon-container">
                     <iconify-icon icon="ri:heart-2-fill"></iconify-icon>
@@ -115,11 +116,22 @@
             </div>
         </div>
     </section>
-    
-
     <section class="section about-us-section">                      
         <div class="page-wrapper">
-            VIDEO...
+            <div class="video-section">
+                <h3>What's your personality type?</h3>
+                <div class="video">
+                    <iframe title="4 Personality Types - Leader/Thinker/Talker/Peacemaker" src="https://www.youtube.com/embed/BVzPkh-fTME?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+                <p>What's your personality type? Nowadays, there can be a lot of answers to that and many different tests to help you find out. But have you found one that helps you better understand others? Or helps you navigate the personality differences in your own home?</p>
+                <div>
+                    <h3>Take the personality test!
+                    </h3>
+                    <p>
+        Take our free personality test and find out if you are a Leader, a Thinker, a Talker, or a Peacemaker! Not only will this test help you understand a little bit more about yourself, it will also help you understand how you relate to the personalities of those around you. Use it with your family to learn more about navigating the personality differences in your home!
+                    </p>
+                </div>
+            </div>
         </div>        
     </section>
 
@@ -189,14 +201,14 @@
                         <p>Web Developer</p>
                         
                         <div class="rating">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
                         </div>
                     </div>
-                    <p class="testimonial-text">"I can't thank this psychologist consultancy enough for their exceptional service. The online consultations provided me with the support I needed to overcome my anxiety and depression. Their psychologists are not only empathetic and skilled but also knowledgeable about the 4 temperaments and how they influence interpersonal dynamics. "</p>
+                    <p class="testimonial-text">"I can't thank this psychologist consultancy enough for their exceptional service. Their psychologists are not only empathetic and skilled but also knowledgeable about the 4 temperaments and how they influence interpersonal dynamics. "</p>
                 </div>
             
                 <div class="testimonial">
@@ -209,14 +221,14 @@
                         <p>Graphic Designer</p>
                         
                         <div class="rating">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
                         </div>
                     </div>
-                    <p class="testimonial-text">"As a busy professional, juggling work and personal life was challenging. I turned to this psychologist consultancy for their online consultations, and it's been an invaluable experience. Their psychologists not only helped me navigate through stress and burnout, but they also introduced me to the concept of the 4 temperaments. "</p>
+                    <p class="testimonial-text">"As a busy professional, juggling work and personal life was challenging. I turned to this psychologist consultancy for their online consultations, and it's been an invaluable experience. Their psychologists helped me navigate through stress and burnout. "</p>
                 </div>
             
                 <div class="testimonial">
@@ -229,15 +241,15 @@
                         <p>Marketing Manager</p>
                     
                         <div class="rating">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="noto:star"></iconify-icon>
+                            <iconify-icon icon="dashicons:star-filled"></iconify-icon>
                         </div>
                     </div>
 
-                    <p class="testimonial-text">"I was skeptical about the effectiveness of online consultations, but this psychologist consultancy exceeded my expectations. Their psychologists are not only highly qualified but also incredibly patient and supportive. What sets them apart is their unique approach of educating clients about the 4 temperaments. "</p>
+                    <p class="testimonial-text">"I was skeptical about the effectiveness of online consultations, but this psychologist consultancy exceeded my expectations. Their psychologists are not only highly qualified but also incredibly patient and supportive. "</p>
                 </div>
             </div>
         </div>
@@ -359,10 +371,10 @@
                     <span>last name</span>
                  
                 </div>
+                    <label for="slctRegion">Region :</label>
+                    <select id="slctRegion" onchange="getRegion(event)"></select>
                     <label for="slctProvince">Province:</label>
                     <select id="slctProvince"></select>
-                    <label for="slctRegion">Region :</label>
-                    <select id="slctRegion"></select>
                 <div>
 
                 </label>

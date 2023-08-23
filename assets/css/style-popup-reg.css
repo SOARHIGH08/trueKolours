@@ -18,7 +18,7 @@
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #77530a;
+    background-color: #FF9100;
     padding: 20px;
     position: absolute;
     border-radius: 5px;
@@ -26,11 +26,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* margin-block: 50px; */
 }
   
 .form-section .form h1{
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
     color: white;
-    font-size: var(--size--5);
+    font-size: 20px;
     /* font-size: 20px; */
 }
 
@@ -46,81 +49,110 @@
 }
   
 .form label {
+    font-family: 'Abel', sans-serif;
     position: relative;
+    font-size: 14px;
 }
   
 .form label .input {
+    font-family: 'Abel', sans-serif;
     width: 100%;
-    padding: 10px 10px 20px 10px;
+    padding: 5px 5px 10px 5px;
     outline: 0;
     border: 1px solid #77530a;
     border-radius: 5px;
+    font-size: 14px;
 }
   
 .form label .input + span {
+    font-family: 'Abel', sans-serif;
     position: absolute;
     left: 10px;
     top: 15px;
     color: #77530a;
-    font-size: 0.9em;
+    font-size: 14px;
     cursor: text;
     transition: 0.3s ease;
 }
   
 .form label .input:placeholder-shown + span {
     top: 15px;
-    font-size: 0.9em;
+    font-size: 14px;
 }
   
 .form label .input:focus + span,.form label .input:valid + span {
-    top: 30px;
-    font-size: 0.7em;
-    font-weight: 600;
+    top: -8px;
+    font-family: 'Abel', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    background-color: rgb(22, 20, 20);
+    color: white;
+    border-radius: 5px;
+    padding: 1px 5px;
 }
   
 .form label .input:valid + span {
-    color: rgb(186, 185, 185);
+    color: white;   
 }
   
 .input01 {
+    font-family: 'Abel', sans-serif;
     width: 100%;
-    padding: 10px 10px 20px 10px;
+    padding: 5px;
     outline: 0;
     border: 1px solid #d2a448;
+    font-size: 14px;
     border-radius: 5px;
 }
   
 .form label .input01 + span {
     position: absolute;
+    font-family: 'Abel', sans-serif;
     left: 10px;
     top: 50px;
     color: #77530a;
-    font-size: 0.9em;
+    font-size: 14px;
     cursor: text;
     transition: 0.3s ease;
 }
   
 .form label .input01:placeholder-shown + span {
     top: 40px;
-    font-size: 0.9em;
+    font-size: 14px;
 }
   
 .form label .input01:focus + span,.form label .input01:valid + span {
-    top: 50px;
-    font-size: 0.7em;
-    font-weight: 600;
+    top: -8px;
+    font-size: 10px;
+    font-weight: 100;
+    padding: 1px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000000;
 }
   
 .form label .input01:valid + span {
     color: 77530a;
 }
-  
+
+.fancy:active {
+    box-shadow: inset 1px 2px 5px black;
+}
+
+#slctProvince,
+#slctRegion{
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
 .fancy {
-    background-color: white;
-    border: 2px solid #cca14a;
+    background-color: #4846464e;
+    border: 2px solid white;
     border-radius: 0px;
     box-sizing: border-box;
-    color: #77530a;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-weight: 390;
@@ -135,16 +167,19 @@
     text-transform: none;
     transition: all 0.3s ease-in-out;
     user-select: none;
-    font-size: 13px;
+    font-size: 14px;
+    border-radius: 10px;
 }
   
 .fancy-cancel {
-    background-color: #4846464e;
-    color: white;
+    border-radius: 10px;
+    background-color: #444040d2;
+    color: rgb(87, 84, 84);
 }
   
 .fancy .text {
-    font-size: 1.125em;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
     line-height: 1.33333em;
     padding-left: 2em;
     display: block;
@@ -152,15 +187,16 @@
     transition: all 0.3s ease-in-out;
     text-transform: lowercase;
     text-decoration: none;
-    color: #77530a;
+    color: black;
     transform: translateX(30%);
 }
 
 .fancy-cancel .text {
-    color: white;
+    color: black;
 }
   
 .fancy .top-key {
+    box-shadow: 1px 2px 5px;
     height: 2px;
     width: 1.5625rem;
     top: -2px;
@@ -171,6 +207,7 @@
 }
   
 .fancy .bottom-key-1 {
+    box-shadow: 1px 2px 5px;
     height: 2px;
     width: 1.5625rem;
     right: 1.875rem;
@@ -181,6 +218,7 @@
 }
   
 .fancy .bottom-key-2 {
+    box-shadow: 1px 2px 5px;
     height: 2px;
     width: 0.625rem;
     right: 0.625rem;
@@ -191,13 +229,13 @@
 }
   
 .fancy:hover {
-    color: #77530a;
-    background: #dbaa4a;
+    color: black;
+    background: rgba(0, 0, 0, 0.329);
 }
   
 .fancy-cancel:hover {
-    /* color: black; */
-    background: rgb(206, 196, 196);
+    color: white;
+    background: rgba(0, 0, 0, 0.349);
 }
   
 .fancy:hover::before {
@@ -207,7 +245,7 @@
   
 /* !! */
 .fancy:hover .text {
-    color: black;
+    color: white;
 }
   
 .fancy:hover .top-key {
@@ -227,6 +265,7 @@
 }
 
 .forms-btn button{
+    box-shadow: 1px 2px 5px;
     gap: 5px;
 }
 

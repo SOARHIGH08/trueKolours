@@ -1,0 +1,28 @@
+.video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    
+}
+.video-section h3 {
+    text-align: center;  
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.video {
+    margin: 10px 0; 
+}
+
+iframe {
+    width: var(--step-10);
+    height: var(--step-7);
+}
+.video-section p {
+    margin: 0 auto;  
+    font-family: 'Abel', sans-serif;
+    padding: 10px 0;
+    font-size: 14px;
+}

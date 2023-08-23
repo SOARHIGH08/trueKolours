@@ -55,12 +55,8 @@
     margin: 10px 0;
 }
   
-.testimonials-section .page-wrapper .star{
-    display: inline-block;
-    width: var(--step--6);
-    height: var(--step--6);
-    background-image: url('http://www.pngkey.com/png/full/21-218781_gold-star-png.png');
-    background-size: cover;
+.testimonials-section .page-wrapper .rating iconify-icon{
+    font-size: var(--step--6);
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial h3{
@@ -70,13 +66,15 @@
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial div p{
-    font-size: var(--step--7);
-    white-space: nowrap;
+    font-size: 16px;
+    white-space: nowrap;  
+    font-family: 'Abel', sans-serif;
 }
   
 .testimonials-section .page-wrapper .testimonial .testimonial-text{    
-    font-size: var(--step--7);
-    
+    font-size: var(--step--8);  
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;    
     text-align: justify;
 }
 
@@ -84,8 +82,8 @@
 @media screen and (max-width: 640px){
   
     .testimonials-section .page-wrapper .picture-container{
-        width: var(--step-img--6);
-        height: var(--step-img--8);
+        width: var(--step-img--10);
+        height: var(--step-img--10);
     }
     .testimonials-section .page-wrapper .testimonies{
         display: flex;
