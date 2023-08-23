@@ -46,7 +46,7 @@
     box-shadow:
         0 0 0 4px wheat,
         -2px 5px 5px #00000083;
-
+        animation: glow 3s infinite ease-in-out;
     border-radius: 21% 23% 27% 41% / 32% 50% 10% 19% ;
     z-index: 8;
 }
@@ -62,11 +62,11 @@
 
 .floating-cta {
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: -330px;
     padding: 10px;
-    margin: 7px;
-    width: 180px;
+    margin: 20px;
+    width: 100px;
     height: 42px;
     background-color: rgb(255, 145, 0);
     box-shadow:

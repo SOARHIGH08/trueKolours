@@ -64,18 +64,19 @@
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial h3{
-   font-size: var(--step--7);
+   font-size: var(--step--6);
+   font-weight: 500;
    white-space: nowrap;
 }
 
 .testimonials-section .page-wrapper .testimonies .testimonial div p{
-   font-size: var(--step--8);
-   white-space: nowrap;
+    font-size: var(--step--7);
+    white-space: nowrap;
 }
   
-.testimonials-section .page-wrapper .testimonial .testimonial-text{
-    font-style: italic;
-    font-size: var(--step--8);
+.testimonials-section .page-wrapper .testimonial .testimonial-text{    
+    font-size: var(--step--7);
+    
     text-align: justify;
 }
 

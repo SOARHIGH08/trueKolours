@@ -79,7 +79,7 @@
 .benefits-section .page-wrapper .gallery-text .text{
     padding: 5px 5px;
     display: flex;
-    font-size: var(--step--6);
+    20px-6);
     align-items: center;
 }
 
@@ -147,7 +147,7 @@
         max-width: max-content;
         margin: var(--step--6) 0;
         padding: var(--step--6) var(--step--4);
-        font-size: var(--step--4);
+        20px-4);
         white-space: nowrap;
     }
 

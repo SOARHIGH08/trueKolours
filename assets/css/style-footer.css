@@ -30,14 +30,14 @@ footer .page-wrapper .icon-col{
 }
 
 footer .page-wrapper h4, footer .page-wrapper p, footer .page-wrapper a{ 
-    font-size: var(--step--6);
+    20px-6);
     color: white;
     padding: 2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer .page-wrapper h4{
-    font-size: var(--step--6);
+    20px-6);
     color: #ffb300;
     width: fit-content;
 }

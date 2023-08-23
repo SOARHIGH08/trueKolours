@@ -8,8 +8,9 @@
 }
 
 .features-section .page-wrapper .text p{
-    margin: 10px;
+    margin: 8px;
     text-align: justify;
+    font-size: var(--step--6);
 }
 
 .features-section .page-wrapper .cards{
@@ -68,9 +69,9 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: var(--step-6);
-    height: var(--step-6);
-    background: radial-gradient(circle, #ffd277, #77530a);
+    width: var(--step-5);
+    height: var(--step-5);
+    background-color: #FF9100;;
     border-radius: 10px;
     color: white;
     cursor: pointer;
@@ -108,13 +109,10 @@
     appearance: none;
     border: none;
     background: none;
-    color: #0f1923;
     cursor: pointer;
     position: relative;
     padding: 15px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: var(--step--5);
     transition: all .15s ease;
     width: var(--step-10);
 }
@@ -164,8 +162,8 @@
     position: relative;
     display: block;
     padding: 10px 20px;
-    color: #fff;
-    background-color: #77530a;
+    color: white;
+    background-color: #FF9100;
     overflow: hidden;
     box-shadow: inset 0px 0px 0px 1px transparent;
 }
@@ -200,8 +198,7 @@
     bottom: -1px;
     left: -8px;
     width: 0;
-    background: radial-gradient(circle, #ffd277, #77530a);
-    /* background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a); */;
+    background: radial-gradient(circle, #ffd277, #FF9100);
     transform: skew(-15deg);
     transition: all .2s ease;
 }
@@ -231,7 +228,17 @@
     }
     
     .features-section .page-wrapper .cards .card{
-        width: var(--step-6);
-        height: var(--step-6);
+        width: var(--step-4);
+        height: var(--step-4);
+    }    
+  
+    .features-section .page-wrapper .cards .card p.tip{
+        font-size: var(--step--6);
+        font-weight: 600;
+    }
+    
+    .features-section .page-wrapper .cards .card p.second-text{
+        font-size: var(--step--7);
+        margin: 0 20px;
     }
 }

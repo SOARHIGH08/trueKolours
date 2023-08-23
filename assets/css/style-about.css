@@ -1,6 +1,12 @@
 /* about - -us */
+.about-us-section .page-wrapper{
+    margin-block: 100px;
+    padding: 50px;
+    height: 100%;
+}
+
 .about-us-section .page-wrapper .notebook img{
-    height: 100vh;
+    height: 100%;
     opacity: .3;
     position: absolute;
     right: 0;
@@ -26,7 +32,7 @@
     margin: var(--step--3) 0;
     border-radius: 2px;
 }
-  
+
 .mirror{
     margin: 10px;
     width: 70px;
@@ -51,15 +57,15 @@
     margin: var(--step--3) 0 var(--step--7) 0;
     text-align: center;
     color: #edeaea;
-    font-size: var(--step--5);
+    font-size: 40px;
 }
 
 .about-us-section .page-wrapper .about-us .text p{
     margin: var(--step--10) var(--step--4) var(--step--3);
     text-align: justify;
     line-height: 1.7;
-    color: #cac8c8;
-    font-size: var(--step--6);
+    color: #cac8c8;   
+    font-size: 18px; 
 }
 
 .about-us-section .page-wrapper .about-us .psych{
@@ -84,7 +90,7 @@
 }
 
 .about-us-section .page-wrapper .about-us .psych p{
-    font-size: var(--step--7);
+    
     text-align: justify;
     max-width: 500px;
     
@@ -95,7 +101,7 @@
 
     .about-us-section .page-wrapper .about-us{
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: flex-end;
     }
     
     .about-us-section .page-wrapper .about-us .vp{

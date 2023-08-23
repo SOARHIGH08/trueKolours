@@ -10,33 +10,29 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-sidebar.css">
+    <link rel="stylesheet" href="assets/css/style-nav.css">
     <link rel="stylesheet" href="assets/css/style-result.css">
     <link rel="stylesheet" href="assets/css/style-test.css">
     <title>Result</title>
 </head>
 <body>  
   <main class="test">
-    <div class="sidebar-container">
+    
+    <nav id="navbar" class="navbar">
       <div class="logo-text" id="logo-text">
           <iconify-icon icon="ic:twotone-color-lens"></iconify-icon>
           <p>True Kolours</p>
       </div>
 
-      <div class="burger" id="burger"></div>
+      <ul class="ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="four-temperaments.html">Four Temperaments</a></li>
+          <li><a href="test.html">Personality Test</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+      </ul>    
+  </nav>
 
-      <div class="sidebar hidden-li" id="sidebar">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="four-temperaments.html">Four Temperaments</a></li>
-              <li><a href="test.html">Personality Test</a></li>
-          </ul>
-      </div>
-
-      <div class="floating-cta" id="specificLi">
-          <h1>Get Involved</h1>
-      </div>
-    </div>
-    <div class="page-wrapper">   
+    <div class="page-wrapper reult-page-wrapper">   
         <div class="result-container" id="resultContainer">
            
           <div class="result-subtitle">

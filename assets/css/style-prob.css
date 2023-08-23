@@ -1,7 +1,7 @@
 /* problem - section */
-
 .problem-section .page-wrapper{
     justify-content: flex-end;
+    background: linear-gradient(90deg, transparent, #7a4500, transparent);
 }
 
 .problem-section .page-wrapper .prob{
@@ -18,8 +18,8 @@
 .problem-section .page-wrapper .prob p{
     margin: 0 40px;
     text-align: justify;
-    line-height: 2;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Caveat', sans-serif;
+    font-size: var(--step--5);
 }
 
 .problem-section .page-wrapper .prob img{
@@ -53,7 +53,7 @@
     }
     
     .problem-section .page-wrapper .prob img{
-        height: var(--step-img--2);
+        height: var(--step-img--4);
         border-radius: 13% 43% 16% 50% / 18% 50% 24% 53%;
     }
 }

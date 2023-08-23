@@ -2,21 +2,26 @@
 /* faq - section */
 .faq-section{
     height: 99vh;
+    overflow: hidden;
+}
+
+.faq-section p{
+    font-size: var(--step--6);
 }
 
 .faq-section .page-wrapper{
     flex-direction: column;
     align-items: stretch;  
     height: auto; 
-    padding: var(--step-0); 
-    margin: 50px auto;
+    padding: var(--step--5); 
+    margin: 30px auto 0;
     border-radius: 15px;
     background-color: rgb(244, 244, 244);
 
 }
 
 .faq-section .page-wrapper .container{
-    margin: 20px 0 50px 0;
+    margin: 10px 0 50px 0;
     text-align: center;
 }
 

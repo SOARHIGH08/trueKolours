@@ -14,7 +14,7 @@ let displayQuestion = () => {
     
     let x = questionsList.innerHTML;
     if (x == "Analyzing data...") {
-        delayDuration = 4000;
+        delayDuration = 3000;
     } else {
         delayDuration = 1000;
     }
