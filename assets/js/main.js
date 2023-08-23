@@ -24,69 +24,34 @@ accordionItems.forEach(item => {
 });
 
 
-// calculate section heights and update <li> visibility on scroll
-let specificLi = document.getElementById('specificLi');
-let sections = document.querySelectorAll('.section');
-let sectionHeights = [];
-specificLi.style.display = "none";
+// // calculate section heights and update <li> visibility on scroll
+// let specificLi = document.getElementById('specificLi');
+// let sections = document.querySelectorAll('.section');
+// let sectionHeights = [];
+// specificLi.style.display = "none";
 
-sections.forEach(function(section){
-    sectionHeights.push(section.offsetHeight);
-});
+// sections.forEach(function(section){
+//     sectionHeights.push(section.offsetHeight);
+// });
 
-window.addEventListener('scroll', function(){
-    let currentPosition = window.scrollY;
+// window.addEventListener('scroll', function(){
+//     let currentPosition = window.scrollY;
 
-    let startSectionIndex = 0;
-    let endSectionIndex = sectionHeights.length - 3;
+//     let startSectionIndex = 0;
+//     let endSectionIndex = sectionHeights.length - 3;
 
-    let topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
-    let bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
+//     let topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
+//     let bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
 
-    // update visibility of specific <li> tag based on scroll position
-    if (currentPosition >= topPosition && currentPosition <= bottomPosition){
-      specificLi.style.display = "block";
-        specificLi.style.animation = "CTAmoveLeftToRight .1s linear forwards";
-    } else {
-        specificLi.style.animation = "CTAmoveRightToLeft .1s linear forwards";
-    }
-});
-
-
-
-// // Change color of navbar on scroll
-// let prevScrollPos = window.pageYOffset;
-// let navLinks = document.getElementsByClassName("navLinks");
-// let currentColorIndex = 0;
-// let colorClasses = ["white", "black"];    
-
-// window.onscroll = function(){
-//     let currentScrollPos = window.pageYOffset;
-
-//     if (prevScrollPos > currentScrollPos){
-//         navbar.classList.remove("navbar-hidden");
-//     } else{
-//         navbar.classList.add("navbar-hidden");
+//     // update visibility of specific <li> tag based on scroll position
+//     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
+//       specificLi.style.display = "block";
+//         specificLi.style.animation = "CTAmoveLeftToRight .1s linear forwards";
+//     } else {
+//         specificLi.style.animation = "CTAmoveRightToLeft .1s linear forwards";
 //     }
+// });
 
-//     prevScrollPos = currentScrollPos;
-
-//     let scrollMultiple = Math.floor(currentScrollPos / window.innerHeight);
-//     let newColorIndex = scrollMultiple % colorClasses.length;
-
-//     // Update navbar and navLinks colors
-//     if (newColorIndex !== currentColorIndex){
-//         navbar.classList.remove(colorClasses[currentColorIndex]);
-//         navbar.classList.add(colorClasses[newColorIndex]);
-        
-//         for (let i = 0; i < navLinks.length; i++){
-//             navLinks[i].classList.remove(colorClasses[currentColorIndex]);
-//             navLinks[i].classList.add(colorClasses[newColorIndex]);
-//         } 
-
-//         currentColorIndex = newColorIndex;
-//     }
-// };
 
 // Scroll to section on link click
 document.addEventListener("DOMContentLoaded", function(){
