@@ -350,32 +350,40 @@
             <h1>Consultation Sign-Up</h1>
             <div class="flex">
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" id="firstName" type="text" placeholder="" required="">
                     <span>first name</span>
                 </label>
 
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" id="lastName" type="text" placeholder="" required="">
                     <span>last name</span>
+                 
+                </div>
+                    <label for="slctProvince">Province:</label>
+                    <select id="slctProvince"></select>
+                    <label for="slctRegion">Region :</label>
+                    <select id="slctRegion"></select>
+                <div>
+
                 </label>
             </div>  
                     
             <label>
-                <input class="input" type="email" placeholder="" required="">
+                <input class="input" id="email" type="email" placeholder="" required="">
                 <span>email</span>
             </label> 
                 
             <label>
-                <input class="input" placeholder="" type="tel" required="">
+                <input class="input" id="contactNumber" placeholder="" type="tel" required="">
                 <span>contact number</span>
             </label>
             <label>
-                <textarea class="input01" placeholder="" rows="3" required=""></textarea>
+                <textarea class="input01" id="message" placeholder="" rows="3" required=""></textarea>
                 <span>message</span>
             </label>
 
             <div class="forms-btn">
-                <button type="submit"class="fancy">
+                <button type="submit" id="submitBtn" class="fancy">
                     <span class="top-key"></span>
                     <span class="text">Submit</span>
                     <span class="bottom-key-1"></span>
@@ -464,5 +472,6 @@
 
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>

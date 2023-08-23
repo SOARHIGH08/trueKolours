@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(){
 let showFormBtns = document.querySelectorAll('.showFormBtn');
 let myForm = document.getElementById('myForm');
 let cancelFormBtn = document.getElementById('cancelFormBtn');
-let confirmationPopup = document.getElementById('confirmationPopup');
+// let confirmationPopup = document.getElementById('confirmationPopup');
 let closeConfirmationBtn = document.getElementById('closeConfirmationBtn');
 let sectionsToHide = document.querySelectorAll('section:not(.hero-section)');
 let footerToHide = document.querySelector('footer');
@@ -145,6 +145,7 @@ myForm.addEventListener('submit', function(event) {
     event.preventDefault();
     myForm.style.display = 'none';
     confirmationPopup.style.display = 'block';
+    
 });
 
 closeConfirmationBtn.addEventListener('click', function() {
