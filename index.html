@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/style-popup-reg.css">
     <link rel="stylesheet" href="assets/css/style-prob.css">
     <link rel="stylesheet" href="assets/css/style-testimony.css">
+    <link rel="stylesheet" href="assets/css/style-video-section.css">
+    <link rel="stylesheet" href="assets/css/style-testimonials.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Mini Project 2</title>
@@ -99,32 +101,20 @@
         </div>
     </section>
 
-    <section class="section benefits-section">     
-        <div class="page-wrapper">
-            <h1>Connect with your love ones again</h1>
-            <div class="gallery-container">
-                <div class="img img1"></div>
-                
-                <div class="img img2"></div>          
-
-                <div class="img img3"></div>
+    <section class="section benefits-section">    
+         <!--video section  -->
+        <div class="video-section">
+            <h2>What's your personality type?</h2>
+            <div class="video">
+                <iframe title="4 Personality Types - Leader/Thinker/Talker/Peacemaker" width="700" height="400" src="https://www.youtube.com/embed/BVzPkh-fTME?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
             </div>
-
-            <div class="gallery-text">
-                <div class="cont">
-                    <div class="text">Conflict resolution</div>
-                    <div class="text">Relationship compatibility</div>
-                </div>
-                <div class="cont">   
-                    <div class="text">Emotional intelligence</div>
-                    <div class="text">Nurturing Education</div>
-                </div>
-            </div>
-
-            <div class="gallery-container">
-                <div class="img img4"></div>
-                <div class="img img5"></div>
-                <div class="img img6"></div>   
+            <p>What's your personality type? Nowadays, there can be a lot of answers to that and many different tests to help you find out. But have you found one that helps you better understand others? Or helps you navigate the personality differences in your own home?</p>
+            <div>
+                <h3>Take the personality test!
+                </h3>
+                <p>
+    Take our free personality test and find out if you are a Leader, a Thinker, a Talker, or a Peacemaker! Not only will this test help you understand a little bit more about yourself, it will also help you understand how you relate to the personalities of those around you. Use it with your family to learn more about navigating the personality differences in your home!
+                </p>
             </div>
         </div>
     </section>
@@ -280,6 +270,39 @@
                 </div>
             </div>
         </div>
+        <!-- testimonials -->
+        <header>
+            <div class="container">
+                <div class="nav">
+                    <h1>Testimonials</h1>
+                    <div>
+                        <button onclick="showCreateCardBox()">Add testimonial</button>
+                        <button onclick="delFlashcards()">Delete testimonial</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                   <div class="flashcards"></div>
+               </div>
+           </div>
+        
+           </header>
+           <div class="container">
+            <div class="create-box">
+                <h2 style="text-align: center;color: black;">Create Testimonials</h2>
+                <label for="name">Name</label>
+                <textarea id="name"></textarea>
+                <br>
+                <label for="testimonial">Testimonial</label>
+                <textarea name="" id="testimonial" cols="30" rows="10"></textarea>
+                <div>
+                    <button onclick="addFlashcard()">Save</button>
+                    <button onclick="hideCreateBox()">Close</button>
+                </div>
+            </div>
+           </div>
     </section>
 
     <section class="section faq-section">                      
@@ -503,5 +526,6 @@
 
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/testimonial.js"></script>
 </body>
 </html>
