@@ -11,6 +11,22 @@
     height: calc(100vh - 40px);  
 }
 
+.instruction div,
+.instruction li{
+    margin: 0 auto;
+    width: min(95%, 600px);
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    text-align: justify;
+}
+
+.instruction div {
+    margin-block: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .lang-buts-cont {
     display: flex;
     justify-content: center;

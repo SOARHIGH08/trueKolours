@@ -8,16 +8,24 @@
     height: 42px;
     background-color: rgb(255, 145, 0);
     box-shadow:
-        0 0 0 4px wheat,
-        -2px 5px 5px #00000083;
-
-    border-radius: 37% 34% 36% 26% / 10% 36% 34% 34% ;
+        0 0 5px 0,
+        0 0 0 7px white,
+        0 0 10px 5px;
+    border-radius: 5px;    
     z-index: 9;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.floating-cta:hover {
+  transform: scale(1.1);
 }
 
 .floating-cta h1 {
-    font-size: 17px;animation: pulse 3s infinite;
+    font-size: 22px;
+    animation: pulse 3s infinite;
+    font-weight: 400;
     text-align: center  ;
 }
 

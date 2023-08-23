@@ -34,7 +34,7 @@
     font-family: 'Abel', sans-serif;
 }   
 
-.hero-section .page-wrapper .text h2`{
+.hero-section .page-wrapper .text h2 {
     color: #4f4242;
     font-size: var(--step--4);
 }
