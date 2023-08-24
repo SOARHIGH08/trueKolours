@@ -1,3 +1,31 @@
+
+let icon = document.getElementById("icon");
+let ul = document.getElementById("ul");
+
+let menuOpen = false;
+
+let updateVisibility = () => {    
+  if (!menuOpen) {
+ 
+    icon.innerHTML = '<iconify-icon icon="solar:hamburger-menu-broken"></iconify-icon>';
+    menuOpen = true;
+    ul.style.animation = "hideNav 1s ease forwards";
+    
+
+  } else {
+
+    icon.innerHTML = ' <iconify-icon icon="heroicons:x-mark-20-solid"></iconify-icon>';
+    menuOpen = false;
+    ul.style.animation = "showNav 1s ease forwards";
+ 
+  }
+}
+
+icon.addEventListener("click", updateVisibility);
+
+updateVisibility();
+
+
 // accordion functionality
 let accordionItems = document.querySelectorAll('.accordion-item');
 
@@ -24,34 +52,6 @@ accordionItems.forEach(item => {
 });
 
 
-// // calculate section heights and update <li> visibility on scroll
-// let specificLi = document.getElementById('specificLi');
-// let sections = document.querySelectorAll('.section');
-// let sectionHeights = [];
-// specificLi.style.display = "none";
-
-// sections.forEach(function(section){
-//     sectionHeights.push(section.offsetHeight);
-// });
-
-// window.addEventListener('scroll', function(){
-//     let currentPosition = window.scrollY;
-
-//     let startSectionIndex = 0;
-//     let endSectionIndex = sectionHeights.length - 3;
-
-//     let topPosition = sectionHeights.slice(0, startSectionIndex + 0).reduce((a, b) => a + b, 0);
-//     let bottomPosition = sectionHeights.slice(0, endSectionIndex + 3).reduce((a, b) => a + b, 0) - window.innerHeight;
-
-//     // update visibility of specific <li> tag based on scroll position
-//     if (currentPosition >= topPosition && currentPosition <= bottomPosition){
-//       specificLi.style.display = "block";
-//         specificLi.style.animation = "CTAmoveLeftToRight .1s linear forwards";
-//     } else {
-//         specificLi.style.animation = "CTAmoveRightToLeft .1s linear forwards";
-//     }
-// });
-
 
 // Scroll to section on link click
 document.addEventListener("DOMContentLoaded", function(){
@@ -70,51 +70,9 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-// Pop up registration form
-let showFormBtns = document.querySelectorAll('.showFormBtn');
-let myForm = document.getElementById('myForm');
-let cancelFormBtn = document.getElementById('cancelFormBtn');
-// let confirmationPopup = document.getElementById('confirmationPopup');
-let closeConfirmationBtn = document.getElementById('closeConfirmationBtn');
-let sectionsToHide = document.querySelectorAll('section:not(.hero-section)');
-let footerToHide = document.querySelector('footer');
-
-showFormBtns.forEach(button => {
-    button.addEventListener('click', function() {
-        // Hide all sections except the first section (hero-section)
-        sectionsToHide.forEach(section => {
-            section.style.display = 'none';
-        });
-
-        // Hide the footer
-        footerToHide.style.display = 'none';
-
-        // Show the form section after a delay
-        setTimeout(function() {
-            myForm.style.display = 'block';
-        }, 700);
-    });
-});
-
-cancelFormBtn.addEventListener('click', function() {
-    // Hide the form and show other sections
-    myForm.style.display = 'none';
-    sectionsToHide.forEach(section => {
-        section.style.display = 'block';
-    });
-    footerToHide.style.display = 'block';
-});
-
-myForm.addEventListener('submit', function(event) {
-    // Prevent form submission and show confirmation popup
-    event.preventDefault();
-    myForm.style.display = 'none';
-    confirmationPopup.style.display = 'block';
-    
-});
-
-closeConfirmationBtn.addEventListener('click', function() {
-    // Close the confirmation popup and reload the page
-    confirmationPopup.style.display = 'none';
-    location.reload();
-});
+document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.key === "b") {
+      // Change this URL to the desired destination
+      window.location.href = "admin.html";
+    }
+  });

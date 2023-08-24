@@ -15,6 +15,7 @@
     z-index: 9;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    border-radius: 37% 34% 36% 26% / 10% 36% 34% 34% ;
 }
 
 

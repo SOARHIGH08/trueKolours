@@ -7,5 +7,41 @@
             "Katamtaman na enerhiya, steady at matiyagang.",
             "Mababang enerhiya, mas gusto ang tahimik at maginhawang takbo."
         ]
+    },
+    {
+        "question": "Paano mo karaniwang hinaharap ang mga sosyal na sitwasyon?",
+        "answers": [
+            "Ako ang buhay ng party, nakikinabang sa mga pakikipag-ugnayan at pagkikita sa mga bagong tao.",
+            "Sosyal ako at palakaibigan, ngunit naa-appreciate ko rin ang mga oras para sa sarili.",
+            "Nag-e-enjoy ako sa pakikipag-sosyalan sa mga munting grupo ng mga malalapit na kaibigan o pamilya.",
+            "Ako'y mas tahimik at mas pinipili ang isang-on-isang usapan o mga tahimik na usapan."
+        ]
+    },
+    {
+        "question": "Paano mo inaasikaso ang mga pagbabago o mga di-inaasahang pangyayari?",
+        "answers": [
+            "Ako'y mabilis na nakakapag-ayos at buong puso kong tinatanggap ang mga pagbabago nang may sigla.",
+            "Maaring medyo kinakabahan ako sa una, pero inaayos ko at ginagawa ang lahat ng aking makakaya.",
+            "Mas gusto ko ang kaunting katatagan at istraktura ngunit kaya kong mag-ayos kapag kinakailangan.",
+            "Nakakaranas ako ng pagkakabahala sa mga pagbabago at maaring tumagal ng oras bago makapag-ayos."
+        ]
+    },
+    {
+        "question": "Paano mo inilalarawan ang iyong paraan ng komunikasyon?",
+        "answers": [
+            "Ako'y maliksi at ekspresibo, gumagamit ng galaw at body language.",
+            "Ako'y masigasig at nakaka-engganyo, gumagamit ng mga kuwento at pagpapatawa para makabuo ng koneksyon.",
+            "Magaling akong tagapakinig at nagbibigay ng mabini at mapanuring mga sagot sa pakikipag-usap.",
+            "Ako'y mas tahimik at piliin ko nang maingat ang mga salita."
+        ]
+    },
+    {
+        "question": "Paano mo hina-handle ang mga pagsusuri o feedback?",
+        "answers": [
+            "Ako'y bukas sa feedback at pinahahalagahan ang mga pagkakataon para sa pag-unlad.",
+            "Maaring sa una ay medyo ma-defensive ako, ngunit sinusubukan kong tingnan ang feedback nang may katapatan.",
+            "Ako'y seryoso sa pagsusuri at iniisip ito bago gumawa ng anumang pagbabago.",
+            "Maaring ako'y sensitibo sa mga pagsusuri at maaaring personalin ko ito."
+        ]
     }
 ]

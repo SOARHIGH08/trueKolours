@@ -1,3 +1,47 @@
+
+// Pop up registration form
+let showFormBtn = document.querySelectorAll('.showFormBtn');
+let myForm = document.getElementById('myForm');
+let cancelFormBtn = document.getElementById('cancelFormBtn');
+let closeConfirmationBtn = document.getElementById('closeConfirmationBtn');
+let sectionsToHide = document.querySelectorAll('section:not(.hero-section)');
+
+showFormBtn.forEach(button => {
+    button.addEventListener('click', function() {
+        // Hide all sections except the first section (hero-section)
+        sectionsToHide.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the form section after a delay
+        setTimeout(function() {
+            myForm.style.display = 'block';
+        }, 700);
+    });
+});
+
+cancelFormBtn.addEventListener('click', function() {
+    // Hide the form and show other sections
+    myForm.style.display = 'none';
+    sectionsToHide.forEach(section => {
+        section.style.display = 'block';
+    });
+});
+
+myForm.addEventListener('submit', function(event) {
+    // Prevent form submission and show confirmation popup
+    event.preventDefault();
+    myForm.style.display = 'none';
+    confirmationPopup.style.display = 'block';
+    
+});
+
+closeConfirmationBtn.addEventListener('click', function() {
+    // Close the confirmation popup and reload the page
+    confirmationPopup.style.display = 'none';
+    location.reload();
+});
+
 let slctRegion = document.querySelector("#slctRegion")
 
 
@@ -72,3 +116,6 @@ submitBtn.addEventListener("click",  (event) =>{
   
 }
 );
+
+
+

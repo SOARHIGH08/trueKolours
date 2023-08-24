@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-admin.css">  
+    <link rel="stylesheet" href="assets/css/style-nav.css">
+
+    <title>Admin</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="logo-text" id="logo-text">
+            <iconify-icon icon="ic:twotone-color-lens"></iconify-icon>
+            <p>True Kolours</p>
+        </div>
+
+        <ul class="ul" id="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="four-temperaments.html">Four Temperaments</a></li>
+            <li><a href="test.html">Personality Test</a></li>
+            <li><a href="about-us.html">About Us</a></li>    
+        </ul>  
+
+        <ul class="ul2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="four-temperaments.html">Four Temperaments</a></li>
+            <li><a href="test.html">Personality Test</a></li>
+            <li><a href="about-us.html">About Us</a></li>    
+        </ul>    
+           
+        <div id="icon"></div>       
+        
+    </nav>
+
+
+    <section class="admin-section">
+        <ul id="entriesList">
+            <!-- Data will be populated here -->
+        </ul>
+    </section>
+
+    <script>
+            let entriesList = document.getElementById("entriesList");
+
+function displayEntries() {
+    let submitEntries = JSON.parse(localStorage.getItem("submitEntries")) || [];
+
+    entriesList.innerHTML = "";
+    submitEntries.reverse(); // Reverse the array to display the newest entries first
+    submitEntries.forEach(entry => {
+        let listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <strong>Name:</strong> ${entry.firstName} ${entry.lastName}<br>
+            <strong>Province:</strong> ${entry.slctProvince}<br>
+            <strong>Email:</strong> ${entry.email}<br>
+            <strong>Contact Number:</strong> ${entry.contactNumber}<br>
+            <strong>Message:</strong> ${entry.message}<br><br>
+        `;
+        entriesList.appendChild(listItem);
+    });
+}
+
+// Call the displayEntries function to initially populate the list
+displayEntries();
+
+            displayEntries();
+    </script>
+    
+    
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

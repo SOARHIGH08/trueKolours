@@ -1,0 +1,17 @@
+.admin-section {
+    width: min(95%, 1000px);
+    margin: 60px auto;
+}
+
+.admin-section li, strong{
+    font-family: 'Abel', sans-serif;
+    list-style: none;
+    font-size: 18px;
+}
+
+.admin-section li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF9100;
+}
