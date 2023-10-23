@@ -105,7 +105,7 @@ engBut.addEventListener("click", () => {
     langCont.style.display = "none";
 });
 filBut.addEventListener("click", () => {
-    getText("assets/js/qa-fil.json");
+    getText("assets/js/qa-fi.json");
     testContainer.style.display = "block";
     langCont.style.display = "none";
 });
